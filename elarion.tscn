@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdbpb7e6s6ybc"]
+
+[ext_resource type="Script" uid="uid://shvjt11yhx3d" path="res://elarion.gd" id="1_378mp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3mjv8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_378mp"]
+
+[node name="Elarion" type="CharacterBody3D"]
+script = ExtResource("1_378mp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_3mjv8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_378mp")
