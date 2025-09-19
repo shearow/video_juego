@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cat5h1ujrwlch"
+path.s3tc="res://.godot/imported/watch__tower_00016_1.png-f89a5f1cdf58afb9d24a2895db546efc.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "a0cb0481f54f910a5a6ed0a1a37e7cb7"
+}
+
+[deps]
+
+source_file="res://assets/models/objects/constructions/tower-rock-grass2/watch__tower_00016_1.png"
+dest_files=["res://.godot/imported/watch__tower_00016_1.png-f89a5f1cdf58afb9d24a2895db546efc.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://assets/models/objects/constructions/tower-rock-grass2/watch__tower_00016_1.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

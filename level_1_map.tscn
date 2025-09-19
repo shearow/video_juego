@@ -1,0 +1,848 @@
+[gd_scene load_steps=67 format=3 uid="uid://cqnve5gycbq0y"]
+
+[ext_resource type="Texture2D" uid="uid://xigmtx7qdqv1" path="res://assets/textures/terrain_textures/ground-085-albedo.dds" id="1_6wot6"]
+[ext_resource type="PackedScene" uid="uid://cdbpb7e6s6ybc" path="res://scenes/elarion/elarion.tscn" id="1_ng8pv"]
+[ext_resource type="Texture2D" uid="uid://cwbcm3bsx36nx" path="res://assets/textures/terrain_textures/ground-085-normal.dds" id="2_k6n5j"]
+[ext_resource type="Texture2D" uid="uid://cor38crlcplct" path="res://assets/textures/terrain_textures/bricks-076A-albedo.dds" id="3_2c7t1"]
+[ext_resource type="Texture2D" uid="uid://c24kaofd672sg" path="res://assets/textures/terrain_textures/bricks-076A-normal.dds" id="4_0vjmo"]
+[ext_resource type="Texture2D" uid="uid://bditg8g56hdve" path="res://assets/textures/terrain_textures/ground-011-albedo.dds" id="5_ngenx"]
+[ext_resource type="Texture2D" uid="uid://bbpy354tv4d3e" path="res://assets/textures/terrain_textures/ground-011-normal.dds" id="6_sb7ms"]
+[ext_resource type="Texture2D" uid="uid://pywbb4vv5xoj" path="res://assets/textures/terrain_textures/ground-018-albedo.dds" id="7_x6exp"]
+[ext_resource type="Texture2D" uid="uid://dviwh1p03cabs" path="res://assets/textures/terrain_textures/ground-018-normal.dds" id="8_pa5ag"]
+[ext_resource type="Texture2D" uid="uid://yndke7lerqft" path="res://assets/textures/terrain_textures/ground-037-albedo.dds" id="9_x1gpk"]
+[ext_resource type="Texture2D" uid="uid://2f3hi3ex85mc" path="res://assets/textures/terrain_textures/ground-037-normal.dds" id="10_ttf6y"]
+[ext_resource type="Texture2D" uid="uid://byjwsp38bydk5" path="res://assets/textures/terrain_textures/ground-038-albedo.dds" id="11_6vy0c"]
+[ext_resource type="Texture2D" uid="uid://s8nutb713hjf" path="res://assets/textures/terrain_textures/ground-038-normal.dds" id="12_80pmf"]
+[ext_resource type="Texture2D" uid="uid://d3ahuxo1uqrqq" path="res://assets/textures/terrain_textures/ground-068-albedo.dds" id="13_o5bdp"]
+[ext_resource type="Texture2D" uid="uid://b4rnvwu351bnj" path="res://assets/textures/terrain_textures/ground-068-normal.dds" id="14_glbn6"]
+[ext_resource type="Texture2D" uid="uid://dgmwvcl6sebse" path="res://assets/textures/terrain_textures/ground-086-albedo.dds" id="15_w04or"]
+[ext_resource type="Texture2D" uid="uid://d2pws32g6hltd" path="res://assets/textures/terrain_textures/ground-086-normal.dds" id="16_lphry"]
+[ext_resource type="Texture2D" uid="uid://cny7dknv0bh2f" path="res://assets/textures/terrain_textures/ground-088-albedo.dds" id="17_5k5n4"]
+[ext_resource type="Texture2D" uid="uid://cxc6td3l4f55s" path="res://assets/textures/terrain_textures/ground-088-normal.dds" id="18_c6gac"]
+[ext_resource type="Texture2D" uid="uid://chll1y3ke3rdf" path="res://assets/textures/terrain_textures/pavingStones-068-albedo.dds" id="19_mogwu"]
+[ext_resource type="Texture2D" uid="uid://quso2ymhy6mo" path="res://assets/textures/terrain_textures/pavingStones-068-normal.dds" id="20_40hhv"]
+[ext_resource type="Texture2D" uid="uid://dq8ypq0fr4vle" path="res://assets/textures/terrain_textures/pavingStones-141-albedo.dds" id="21_lo8sv"]
+[ext_resource type="Texture2D" uid="uid://lvgmuwn0kqpv" path="res://assets/textures/terrain_textures/pavingStones-141-normal.dds" id="22_kxaid"]
+[ext_resource type="Texture2D" uid="uid://bsw8vy8iy5ktj" path="res://assets/textures/terrain_textures/rock-011-albedo.dds" id="23_rbgv8"]
+[ext_resource type="Texture2D" uid="uid://dnfnxg2k5lvyc" path="res://assets/textures/terrain_textures/rock-011-normal.dds" id="24_ir146"]
+[ext_resource type="Texture2D" uid="uid://3x75vnv7g06h" path="res://assets/textures/terrain_textures/rock-030-albedo.dds" id="25_07vrw"]
+[ext_resource type="Texture2D" uid="uid://dono0kscd8mi8" path="res://assets/textures/terrain_textures/rock-030-normal.dds" id="26_y3r5x"]
+[ext_resource type="Texture2D" uid="uid://smbmo8kjw3ox" path="res://assets/textures/terrain_textures/rock-031-albedo.dds" id="27_lnnge"]
+[ext_resource type="Texture2D" uid="uid://dfplvv3vb4nb8" path="res://assets/textures/terrain_textures/rock-031-normal.dds" id="28_k0oo6"]
+[ext_resource type="Texture2D" uid="uid://be2jrlwn6rwsx" path="res://assets/textures/terrain_textures/rock-035-albedo.dds" id="29_soeri"]
+[ext_resource type="Texture2D" uid="uid://cfhku53ulkify" path="res://assets/textures/terrain_textures/rock-035-normal.dds" id="30_k2mfg"]
+[ext_resource type="Texture2D" uid="uid://dsmj5n64dgn1f" path="res://assets/textures/terrain_textures/rock-051-albedo.dds" id="31_2tlaa"]
+[ext_resource type="Texture2D" uid="uid://6goq3bx5wh2u" path="res://assets/textures/terrain_textures/rock-051-normal.dds" id="32_s76je"]
+[ext_resource type="Texture2D" uid="uid://byunyd3y1y3en" path="res://assets/textures/terrain_textures/rock-058-albedo.dds" id="33_cwguo"]
+[ext_resource type="Texture2D" uid="uid://hj1835c24cj7" path="res://assets/textures/terrain_textures/rock-058-normal.dds" id="34_dcahr"]
+[ext_resource type="Texture2D" uid="uid://b1b47xy1ma61o" path="res://assets/textures/terrain_textures/tiles-084-albedo.dds" id="35_b8nby"]
+[ext_resource type="Texture2D" uid="uid://wpx3f7b7kdkm" path="res://assets/textures/terrain_textures/tiles-084-normal.dds" id="36_tin0y"]
+[ext_resource type="PackedScene" uid="uid://cgdbnc81l287k" path="res://assets/models/objects/altar-secrifice/stone_array.glb" id="38_0vjmo"]
+
+[sub_resource type="Gradient" id="Gradient_y2hs8"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ng8pv"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1l5p7"]
+seamless = true
+color_ramp = SubResource("Gradient_y2hs8")
+noise = SubResource("FastNoiseLite_ng8pv")
+
+[sub_resource type="Shader" id="Shader_2c7t1"]
+code = "shader_type spatial;
+render_mode blend_mix,depth_draw_opaque,cull_back,diffuse_burley,specular_schlick_ggx,skip_vertex_transform;
+
+/* The terrain depends on this shader to function. Don't change most things in vertex() or 
+ * terrain normal calculations in fragment(). You probably only want to customize the 
+ * material calculation and PBR application in fragment().
+ *
+ * Uniforms that begin with _ are private and will not display in the inspector. However, 
+ * you can set them via code. You are welcome to create more of your own hidden uniforms.
+ *
+ * This system only supports albedo, height, normal, roughness. Most textures don't need the other
+ * PBR channels. Height can be used as an approximation for AO. For the rare textures do need
+ * additional channels, you can add maps for that one texture. e.g. an emissive map for lava.
+ *
+ */
+
+// Defined Constants
+#define SKIP_PASS 0
+#define VERTEX_PASS 1
+#define FRAGMENT_PASS 2
+
+// Private uniforms
+uniform vec3 _camera_pos = vec3(0.f);
+uniform float _mesh_size = 48.f;
+uniform uint _background_mode = 1u; // NONE = 0, FLAT = 1, NOISE = 2
+uniform uint _mouse_layer = 0x80000000u; // Layer 32
+uniform float _vertex_spacing = 1.0;
+uniform float _vertex_density = 1.0; // = 1/_vertex_spacing
+uniform float _region_size = 1024.0;
+uniform float _region_texel_size = 0.0009765625; // = 1/1024
+uniform int _region_map_size = 32;
+uniform int _region_map[1024];
+uniform vec2 _region_locations[1024];
+uniform float _texture_normal_depth_array[32];
+uniform float _texture_ao_strength_array[32];
+uniform float _texture_roughness_mod_array[32];
+uniform float _texture_uv_scale_array[32];
+uniform vec2 _texture_detile_array[32];
+uniform vec4 _texture_color_array[32];
+uniform highp sampler2DArray _height_maps : repeat_disable;
+uniform highp usampler2DArray _control_maps : repeat_disable;
+#define FILTER_LINEAR 
+uniform highp sampler2DArray _color_maps : source_color, filter_linear_mipmap_anisotropic, repeat_disable;
+uniform highp sampler2DArray _texture_array_albedo : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform highp sampler2DArray _texture_array_normal : hint_normal, filter_linear_mipmap_anisotropic, repeat_enable;
+uniform highp sampler2D noise_texture : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
+
+
+// Public uniforms
+uniform bool height_blending = true;
+uniform bool world_space_normal_blend = true;
+uniform float blend_sharpness : hint_range(0, 1) = 0.87;
+
+uniform bool enable_projection = true;
+uniform float projection_threshold : hint_range(0.0, 0.99, 0.01) = 0.8;
+uniform float projection_angular_division : hint_range(1.0, 16.0, 0.001) = 2.0;
+
+uniform float mipmap_bias : hint_range(0.5, 1.5, 0.01) = 1.0;
+uniform float depth_blur : hint_range(0.0, 35.0, 0.1) = 0.0;
+uniform float bias_distance : hint_range(0.0, 16384.0, 0.1) = 512.0;
+
+uniform bool enable_macro_variation = true;
+uniform vec3 macro_variation1 : source_color = vec3(1.);
+uniform vec3 macro_variation2 : source_color = vec3(1.);
+uniform float macro_variation_slope : hint_range(0., 1.)  = 0.333;
+
+// Generic noise at 3 scales, which can be used for anything 
+uniform float noise1_scale : hint_range(0.001, 1.) = 0.04; // Used for macro variation 1. Scaled up 10x
+uniform float noise1_angle : hint_range(0, 6.283) = 0.;
+uniform vec2 noise1_offset = vec2(0.5);
+uniform float noise2_scale : hint_range(0.001, 1.) = 0.076;	// Used for macro variation 2. Scaled up 10x
+uniform float noise3_scale : hint_range(0.001, 1.) = 0.225; // Used for texture blending edge
+
+// Varyings & Types
+
+struct Material {
+	vec4 alb_ht;
+	vec4 nrm_rg;
+	int base;
+	int over;
+	float blend;
+	float nrm_depth;
+	float ao_str;
+};
+
+
+varying float v_vertex_xz_dist;
+varying vec3 v_vertex;
+
+////////////////////////
+// Vertex
+////////////////////////
+
+// Takes in world space XZ (UV) coordinates & search depth (only applicable for background mode none)
+// Returns ivec3 with:
+// XY: (0 to _region_size - 1) coordinates within a region
+// Z: layer index used for texturearrays, -1 if not in a region
+ivec3 get_index_coord(const vec2 uv, const int search) {
+	vec2 r_uv = round(uv);
+	vec2 o_uv = mod(r_uv,_region_size);
+	ivec2 pos;
+	int bounds, layer_index = -1;
+	for (int i = -1; i < clamp(search, SKIP_PASS, FRAGMENT_PASS); i++) {
+		if ((layer_index == -1 && _background_mode == 0u ) || i < 0) {
+			r_uv -= i == -1 ? vec2(0.0) : vec2(float(o_uv.x <= o_uv.y), float(o_uv.y <= o_uv.x));
+			pos = ivec2(floor((r_uv) * _region_texel_size)) + (_region_map_size / 2);
+			bounds = int(uint(pos.x | pos.y) < uint(_region_map_size));
+			layer_index = (_region_map[ pos.y * _region_map_size + pos.x ] * bounds - 1);
+		}
+	}
+	return ivec3(ivec2(mod(r_uv,_region_size)), layer_index);
+}
+
+// Takes in descaled (world_space / region_size) world to region space XZ (UV2) coordinates, returns vec3 with:
+// XY: (0. to 1.) coordinates within a region
+// Z: layer index used for texturearrays, -1 if not in a region
+vec3 get_index_uv(const vec2 uv2) {
+	ivec2 pos = ivec2(floor(uv2)) + (_region_map_size / 2);
+	int bounds = int(uint(pos.x | pos.y) < uint(_region_map_size));
+	int layer_index = _region_map[ pos.y * _region_map_size + pos.x ] * bounds - 1;
+	return vec3(uv2 - _region_locations[layer_index], float(layer_index));
+}
+
+void vertex() {
+	// Get vertex of flat plane in world coordinates and set world UV
+	v_vertex = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
+
+	// Camera distance to vertex on flat plane
+	v_vertex_xz_dist = length(v_vertex.xz - _camera_pos.xz);
+
+	// Geomorph vertex, set end and start for linear height interpolate
+	float scale = MODEL_MATRIX[0][0];
+	float vertex_lerp = smoothstep(0.55, 0.95, (v_vertex_xz_dist / scale - _mesh_size - 4.0) / (_mesh_size - 2.0));
+	vec2 v_fract = fract(VERTEX.xz * 0.5) * 2.0;
+	// For LOD0 morph from a regular grid to an alternating grid to align with LOD1+
+	vec2 shift = (scale < _vertex_spacing + 1e-6) ? // LOD0 or not
+		// Shift from regular to symetric
+		mix(v_fract, vec2(v_fract.x, -v_fract.y),
+			round(fract(round(mod(v_vertex.z * _vertex_density, 4.0)) *
+			round(mod(v_vertex.x * _vertex_density, 4.0)) * 0.25))
+			) :
+		// Symetric shift
+		v_fract * round((fract(v_vertex.xz * 0.25 / scale) - 0.5) * 4.0);
+	vec2 start_pos = v_vertex.xz * _vertex_density;
+	vec2 end_pos = (v_vertex.xz - shift * scale) * _vertex_density;
+	v_vertex.xz -= shift * scale * vertex_lerp;
+
+	// UV coordinates in world space. Values are 0 to _region_size within regions
+	UV = v_vertex.xz * _vertex_density;
+
+	// UV coordinates in region space + texel offset. Values are 0 to 1 within regions
+	UV2 = fma(UV, vec2(_region_texel_size), vec2(0.5 * _region_texel_size));
+
+	// Discard vertices for Holes. 1 lookup
+	ivec3 v_region = get_index_coord(start_pos, VERTEX_PASS);
+	uint control = texelFetch(_control_maps, v_region, 0).r;
+	bool hole = bool(control >>2u & 0x1u);
+
+	// Show holes to all cameras except mouse camera (on exactly 1 layer)
+	if ( !(CAMERA_VISIBLE_LAYERS == _mouse_layer) && 
+			(hole || (_background_mode == 0u && v_region.z == -1))) {
+		v_vertex.x = 0. / 0.;
+	} else {		
+		// Set final vertex height & calculate vertex normals. 3 lookups
+		ivec3 coord_a = get_index_coord(start_pos, VERTEX_PASS);
+		ivec3 coord_b = get_index_coord(end_pos, VERTEX_PASS);
+		float h = mix(texelFetch(_height_maps, coord_a, 0).r,texelFetch(_height_maps, coord_b, 0).r,vertex_lerp);
+		v_vertex.y = h;
+	}
+
+	// Convert model space to view space w/ skip_vertex_transform render mode
+	VERTEX = (VIEW_MATRIX * vec4(v_vertex, 1.0)).xyz;
+	NORMAL = normalize((MODELVIEW_MATRIX * vec4(NORMAL, 0.0)).xyz);
+	BINORMAL = normalize((MODELVIEW_MATRIX * vec4(BINORMAL, 0.0)).xyz);
+	TANGENT = normalize((MODELVIEW_MATRIX * vec4(TANGENT, 0.0)).xyz);
+}
+
+////////////////////////
+// Fragment
+////////////////////////
+
+vec3 unpack_normal(vec4 rgba) {
+	return fma(rgba.xzy, vec3(2.0), vec3(-1.0));
+}
+
+vec3 pack_normal(vec3 n) {
+	return fma(normalize(n.xzy), vec3(0.5), vec3(0.5));
+}
+
+float random(in vec2 xy) {
+	return fract(sin(dot(xy, vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+vec2 rotate(vec2 v, float cosa, float sina) {
+	return vec2(fma(cosa, v.x, - sina * v.y), fma(sina, v.x, cosa * v.y));
+}
+
+// Moves a point around a pivot point.
+vec2 rotate_around(vec2 point, vec2 pivot, float angle){
+	float x = pivot.x + (point.x - pivot.x) * cos(angle) - (point.y - pivot.y) * sin(angle);
+	float y = pivot.y + (point.x - pivot.x) * sin(angle) + (point.y - pivot.y) * cos(angle);
+	return vec2(x, y);
+}
+
+vec4 height_blend4(vec4 a_value, float a_height, vec4 b_value, float b_height, float blend) {
+	if(height_blending) {
+		float ma = max(a_height + (1.0 - blend), b_height + blend) - (1.001 - blend_sharpness);
+	    float b1 = max(a_height + (1.0 - blend) - ma, 0.0);
+	    float b2 = max(b_height + blend - ma, 0.0);
+	    return (a_value * b1 + b_value * b2) / (b1 + b2);
+	} else {
+		float contrast = 1.0 - blend_sharpness;
+		float factor = (blend - contrast) / contrast;
+		return mix(a_value, b_value, clamp(factor, 0.0, 1.0));
+	}
+}
+
+float height_blend1(float a_value, float a_height, float b_value, float b_height, float blend) {
+	if(height_blending) {
+		float ma = max(a_height + (1.0 - blend), b_height + blend) - (1.001 - blend_sharpness);
+	    float b1 = max(a_height + (1.0 - blend) - ma, 0.0);
+	    float b2 = max(b_height + blend - ma, 0.0);
+	    return (a_value * b1 + b_value * b2) / (b1 + b2);
+	} else {
+		float contrast = 1.0 - blend_sharpness;
+		float factor = (blend - contrast) / contrast;
+		return mix(a_value, b_value, clamp(factor, 0.0, 1.0));
+	}
+}
+
+vec2 detiling(vec2 uv, vec2 uv_center, int mat_id, inout float normal_rotation){
+	if ((_texture_detile_array[mat_id].x + _texture_detile_array[mat_id].y) >= 0.001){
+		uv_center = floor(uv_center) + 0.5;
+		float detile = fma(random(uv_center), 2.0, -1.0) * TAU; // -180deg to 180deg
+		// Rotation
+		float rotation = detile * _texture_detile_array[mat_id].x;
+		uv = rotate_around(uv, uv_center, rotation);
+		// Accumulate total rotation for normal rotation
+		normal_rotation += rotation;
+		// Shift
+		uv += rotate(vec2(_texture_detile_array[mat_id].y * detile), cos(detile), sin(detile));
+	}
+	return uv;
+}
+
+vec2 rotate_plane(vec2 plane, float angle) {
+	float new_x = dot(vec2(cos(angle), sin(angle)), plane);
+	angle = fma(PI, 0.5, angle);
+	float new_y = dot(vec2(cos(angle), sin(angle)), plane);
+	return vec2(new_x, new_y);
+}
+
+// 2-4 lookups ( 2-6 with dual scaling )
+void get_material(vec3 i_normal, float i_height, vec4 ddxy, uint control, ivec3 index, mat3 TANGENT_WORLD_MATRIX, out Material out_mat) {
+	out_mat = Material(vec4(0.), vec4(0.), 0, 0, 0.0, 0.0, 0.0);
+	vec2 index_pos = vec2(index.xy);
+	int region = index.z;
+	
+	// Translate index position to world space.
+	index_pos += _region_locations[region] * _region_size;
+	index_pos *= _vertex_spacing;
+	
+	vec2 base_uv;
+	float p_angle = 0.0;
+	
+	if (i_normal.y >= projection_threshold || !enable_projection) {
+		base_uv = v_vertex.xz;
+	} else {
+		// Project UVs and determine surface normal angle
+		// Quantize the normal otherwise textures lose continuity across domains
+		// Avoid potential singularitys for unit length normal, usually worst case would be
+		// sqrt(3.0)/2.0, however as we are nullifying y component and renormalizing, 
+		// we can use sqrt(2.0)/2.0, as a lower bound.
+		#define SQRT2_HALF 0.7071067811865476
+		vec3 p_normal = normalize(vec3(i_normal.x, 0., i_normal.z));
+		p_normal = normalize(round(p_normal * SQRT2_HALF * projection_angular_division));
+		vec3 p_tangent = normalize(cross(p_normal, vec3(0., 1., 0.)));
+		vec3 p_binormal = normalize(cross(p_tangent, p_normal));
+		p_angle = atan(-i_normal.x, -i_normal.z);
+		base_uv = vec2(dot(v_vertex, p_tangent), dot(v_vertex, p_binormal));
+		// Project uv_center for detiling
+		vec3 i_pos = vec3(index_pos.x, i_height, index_pos.y);
+		index_pos = vec2(dot(i_pos, p_tangent), dot(i_pos, p_binormal));
+	}
+
+	out_mat.base = int(control >>27u & 0x1Fu);
+	out_mat.over = int(control >> 22u & 0x1Fu);
+	out_mat.blend = float(control >>14u & 0xFFu) * 0.003921568627450; // 1./255.0
+
+	out_mat.nrm_depth = _texture_normal_depth_array[out_mat.base];
+	out_mat.ao_str = _texture_ao_strength_array[out_mat.base];
+
+	// Control map scale & rotation, apply to both base and uv_center.
+	// Define base scale from control map value as array index. 0.5 as baseline.
+	float[8] scale_array = { 0.5, 0.4, 0.3, 0.2, 0.1, 0.8, 0.7, 0.6};
+	float control_scale = scale_array[(control >>7u & 0x7u)];
+	base_uv *= control_scale;
+	index_pos *=  control_scale;
+	ddxy *= control_scale;
+
+	// Apply global uv rotation from control map
+	float uv_rotation = float(control >>10u & 0xFu) / 16. * TAU;
+	base_uv = rotate_around(base_uv, vec2(0), uv_rotation);
+	index_pos = rotate_around(index_pos, vec2(0), uv_rotation);
+
+	vec2 matUV = base_uv;
+	vec4 albedo_ht = vec4(0.);
+	vec4 normal_rg = vec4(0.5, 0.5, 1.0, 1.0);
+	vec4 albedo_far = vec4(0.);
+	vec4 normal_far = vec4(0.5, 0.5, 1.0, 1.0);
+	float mat_scale = _texture_uv_scale_array[out_mat.base];
+	float normal_angle = uv_rotation + p_angle;
+	vec4 dd1 = ddxy;
+	
+	if (out_mat.blend < 1.0) {
+		// 2 lookups
+		matUV = detiling(base_uv * mat_scale, index_pos * mat_scale, out_mat.base, normal_angle);
+		dd1.xy = rotate_plane(ddxy.xy, -normal_angle);
+		dd1.zw = rotate_plane(ddxy.zw, -normal_angle);
+		dd1 *= mat_scale;
+		albedo_ht = textureGrad(_texture_array_albedo, vec3(matUV, float(out_mat.base)), dd1.xy, dd1.zw);
+		normal_rg = textureGrad(_texture_array_normal, vec3(matUV, float(out_mat.base)), dd1.xy, dd1.zw);
+
+		// Unpack & rotate base normal for blending
+		normal_rg.xyz = unpack_normal(normal_rg).xyz;
+		normal_rg.xz = rotate_plane(normal_rg.xz, -normal_angle);
+	}
+
+	// Apply color to base
+	albedo_ht.rgb *= _texture_color_array[out_mat.base].rgb;
+
+	// Apply Roughness modifier to base
+	normal_rg.a = clamp(normal_rg.a + _texture_roughness_mod_array[out_mat.base], 0., 1.);
+
+	out_mat.alb_ht = albedo_ht;
+	out_mat.nrm_rg = normal_rg;
+
+	if (out_mat.blend > 0.) {
+		// 2 lookups
+		// Setup overlay texture to blend
+		float mat_scale2 = _texture_uv_scale_array[out_mat.over];
+		float normal_angle2 = uv_rotation + p_angle;
+		vec2 matUV2 = detiling(base_uv * mat_scale2, index_pos * mat_scale2, out_mat.over, normal_angle2);
+		vec4 dd2 = ddxy * mat_scale2;
+		dd2.xy = rotate_plane(dd2.xy, -normal_angle2);
+		dd2.zw = rotate_plane(dd2.zw, -normal_angle2);
+		vec4 albedo_ht2 = textureGrad(_texture_array_albedo, vec3(matUV2, float(out_mat.over)), dd2.xy, dd2.zw);
+		vec4 normal_rg2 = textureGrad(_texture_array_normal, vec3(matUV2, float(out_mat.over)), dd2.xy, dd2.zw);
+
+		// Unpack & rotate overlay normal for blending
+		normal_rg2.xyz = unpack_normal(normal_rg2);
+		normal_rg2.xz = rotate_plane(normal_rg2.xz, -normal_angle2);
+
+		// Apply color to overlay
+		albedo_ht2.rgb *= _texture_color_array[out_mat.over].rgb;
+
+		// Apply Roughness modifier to overlay
+		normal_rg2.a = clamp(normal_rg2.a + _texture_roughness_mod_array[out_mat.over], 0., 1.);
+
+		// apply world space normal weighting from base, to overlay layer
+		float over_blend = albedo_ht2.a; // dont modify actual height value
+		if (world_space_normal_blend) {
+			over_blend *= bool(control >>3u & 0x1u) ? 1.0 : clamp((TANGENT_WORLD_MATRIX * normal_rg.xyz).y, 0.0, 1.0);
+		}
+
+		// Blend overlay and base
+		out_mat.alb_ht = height_blend4(albedo_ht, albedo_ht.a, albedo_ht2, over_blend, out_mat.blend);
+		out_mat.nrm_rg = height_blend4(normal_rg, albedo_ht.a, normal_rg2, over_blend, out_mat.blend);
+		out_mat.nrm_depth = height_blend1(_texture_normal_depth_array[out_mat.base], albedo_ht.a,
+			_texture_normal_depth_array[out_mat.over], over_blend, out_mat.blend);
+		out_mat.ao_str = height_blend1(_texture_ao_strength_array[out_mat.base], albedo_ht.a,
+			_texture_ao_strength_array[out_mat.over], over_blend, out_mat.blend);
+	}
+	return;
+}
+
+float blend_weights(float weight, float detail) {
+	weight = smoothstep(0.0, 1.0, weight);
+	weight = sqrt(weight * 0.5);
+	float result = max(0.1 * weight, fma(10.0, (weight + detail), 1.0f - (detail + 10.0)));
+	return result;
+}
+
+void fragment() {
+	// Recover UVs
+	vec2 uv = UV;
+	vec2 uv2 = UV2;
+	
+	// Lookup offsets, ID and blend weight
+	const vec3 offsets = vec3(0, 1, 2);
+	vec2 index_id = floor(uv);
+	vec2 weight = fract(uv);
+	vec2 invert = 1.0 - weight;
+	vec4 weights = vec4(
+		invert.x * weight.y, // 0
+		weight.x * weight.y, // 1
+		weight.x * invert.y, // 2
+		invert.x * invert.y  // 3
+	);
+	
+	vec3 base_ddx = dFdxCoarse(v_vertex);
+	vec3 base_ddy = dFdyCoarse(v_vertex);
+	vec4 base_derivatives = vec4(base_ddx.xz, base_ddy.xz);
+	// Calculate the effective mipmap for regionspace, and when less than 0,
+	// skip all extra lookups required for bilinear blend.
+	float region_mip = log2(max(length(base_ddx.xz), length(base_ddy.xz)) * _vertex_density);
+	bool bilerp = region_mip < 0.0;
+
+	ivec3 index[4];
+	// control map lookups, used for some normal lookups as well
+	index[0] = get_index_coord(index_id + offsets.xy, FRAGMENT_PASS);
+	index[1] = get_index_coord(index_id + offsets.yy, FRAGMENT_PASS);
+	index[2] = get_index_coord(index_id + offsets.yx, FRAGMENT_PASS);
+	index[3] = get_index_coord(index_id + offsets.xx, FRAGMENT_PASS);
+	
+	// Terrain normals
+	vec3 index_normal[4];
+	float h[8];
+	// allows additional derivatives, eg world noise, brush previews etc
+	float u = 0.0;
+	float v = 0.0;
+	
+	// Re-use index[] for the first lookups, skipping some math. 3 lookups
+	h[3] = texelFetch(_height_maps, index[3], 0).r; // 0 (0,0)
+	h[2] = texelFetch(_height_maps, index[2], 0).r; // 1 (1,0)
+	h[0] = texelFetch(_height_maps, index[0], 0).r; // 2 (0,1)
+	index_normal[3] = normalize(vec3(h[3] - h[2] + u, _vertex_spacing, h[3] - h[0] + v));
+
+	// Set flat world normal - overriden if bilerp is true
+	vec3 w_normal = index_normal[3];
+
+	// Setting this here, instead of after the branch appears to be ~10% faster.
+	// Likley as flat derivatives seem more cache friendly for texture lookups.
+	if (enable_projection && w_normal.y < projection_threshold) {
+		vec3 p_tangent = normalize(cross(w_normal, vec3(0.0, 0.0, 1.0)));
+		vec3 p_binormal = normalize(cross(p_tangent, w_normal));
+		base_derivatives.xy = vec2(dot(base_ddx, p_tangent), dot(base_ddx, p_binormal));
+		base_derivatives.zw = vec2(dot(base_ddy, p_tangent), dot(base_ddy, p_binormal));
+	}
+	
+	// Adjust derivatives for mipmap bias and depth blur effect
+	base_derivatives *=  mix(mipmap_bias,
+		depth_blur + 1.,
+		smoothstep(0.0, 1.0, (v_vertex_xz_dist - bias_distance) / bias_distance));
+
+	// Colormap. 1 - 4 lookups
+	#define COLOR_MAP vec4(1.0, 1.0, 1.0, 0.5)
+	vec4 color_map;
+	vec3 region_uv = get_index_uv(uv2);
+	color_map = region_uv.z > -1.0 && !bilerp ? textureLod(_color_maps, region_uv, region_mip) : COLOR_MAP;
+
+	// Branching smooth normals and interpolated color map must be done seperatley with unmodified weights.
+	if (bilerp) {
+		vec4 col_map[4];
+		col_map[3] = index[3].z > -1 ? texelFetch(_color_maps, index[3], 0) : COLOR_MAP;
+		color_map = col_map[3];
+		#ifdef FILTER_LINEAR
+		col_map[0] = index[0].z > -1 ? texelFetch(_color_maps, index[0], 0) : COLOR_MAP;
+		col_map[1] = index[1].z > -1 ? texelFetch(_color_maps, index[1], 0) : COLOR_MAP;
+		col_map[2] = index[2].z > -1 ? texelFetch(_color_maps, index[2], 0) : COLOR_MAP;
+		
+		color_map = 
+			col_map[0] * weights[0] +
+			col_map[1] * weights[1] +
+			col_map[2] * weights[2] +
+			col_map[3] * weights[3] ;
+		#endif
+
+		// 5 lookups
+		// Fetch the additional required height values for smooth normals
+		h[1] = texelFetch(_height_maps, index[1], 0).r; // 3 (1,1)
+		h[4] = texelFetch(_height_maps, get_index_coord(index_id + offsets.yz, FRAGMENT_PASS), 0).r; // 4 (1,2)
+		h[5] = texelFetch(_height_maps, get_index_coord(index_id + offsets.zy, FRAGMENT_PASS), 0).r; // 5 (2,1)
+		h[6] = texelFetch(_height_maps, get_index_coord(index_id + offsets.zx, FRAGMENT_PASS), 0).r; // 6 (2,0)
+		h[7] = texelFetch(_height_maps, get_index_coord(index_id + offsets.xz, FRAGMENT_PASS), 0).r; // 7 (0,2)
+
+		// Calculate the normal for the remaining index ids.
+		index_normal[0] = normalize(vec3(h[0] - h[1] + u, _vertex_spacing, h[0] - h[7] + v));
+		index_normal[1] = normalize(vec3(h[1] - h[5] + u, _vertex_spacing, h[1] - h[4] + v));
+		index_normal[2] = normalize(vec3(h[2] - h[6] + u, _vertex_spacing, h[2] - h[1] + v));
+
+		// Set interpolated world normal
+		w_normal = 
+			index_normal[0] * weights[0] +
+			index_normal[1] * weights[1] +
+			index_normal[2] * weights[2] +
+			index_normal[3] * weights[3] ;
+	}
+		
+	// Apply terrain normals
+	vec3 w_tangent = normalize(cross(w_normal, vec3(0.0, 0.0, 1.0)));
+	vec3 w_binormal = normalize(cross(w_normal, w_tangent));
+	NORMAL = mat3(VIEW_MATRIX) * w_normal;
+	TANGENT = mat3(VIEW_MATRIX) * w_tangent;
+	BINORMAL = mat3(VIEW_MATRIX) * w_binormal;
+	
+	// Used for material world space normal map blending
+	mat3 TANGENT_WORLD_MATRIX = mat3(w_tangent, w_normal, w_binormal);
+
+	// Get last index
+	// 1 lookup + get_material() = 3-7 total
+	uint control[4];
+	control[3] = texelFetch(_control_maps, index[3], 0).r;
+
+	Material mat[4];
+	get_material(index_normal[3], h[3], base_derivatives, control[3], index[3], TANGENT_WORLD_MATRIX, mat[3]);
+
+	vec4 albedo_height = mat[3].alb_ht;
+	vec4 normal_rough = mat[3].nrm_rg;
+	float normal_map_depth = mat[3].nrm_depth;
+	float ao_strength = mat[3].ao_str;
+
+	// Otherwise do full bilinear interpolation
+	if (bilerp) {
+		// 4 lookups + 3x get_material() = 10-22 total
+		control[0] = texelFetch(_control_maps, index[0], 0).r;
+		control[1] = texelFetch(_control_maps, index[1], 0).r;
+		control[2] = texelFetch(_control_maps, index[2], 0).r;
+
+		get_material(index_normal[0], h[0], base_derivatives, control[0], index[0], TANGENT_WORLD_MATRIX, mat[0]);
+		get_material(index_normal[1], h[1], base_derivatives, control[1], index[1], TANGENT_WORLD_MATRIX, mat[1]);
+		get_material(index_normal[2], h[2], base_derivatives, control[2], index[2], TANGENT_WORLD_MATRIX, mat[2]);
+
+		// rebuild weights for detail and noise blending
+		float noise3 = texture(noise_texture, uv * noise3_scale).r * blend_sharpness;
+		#define PARABOLA(x) (4.0 * x * (1.0 - x))
+		weights = smoothstep(0, 1, weights);
+		weights = vec4(
+			blend_weights(weights.x + PARABOLA(weights.x) * noise3, mat[0].alb_ht.a),
+			blend_weights(weights.y + PARABOLA(weights.y) * noise3, mat[1].alb_ht.a),
+			blend_weights(weights.z + PARABOLA(weights.z) * noise3, mat[2].alb_ht.a),
+			blend_weights(weights.w + PARABOLA(weights.w) * noise3, mat[3].alb_ht.a)
+		);
+		#undef PARABOLA
+		// renormalize weights
+		weights *= 1.0 / (weights.x + weights.y + weights.z + weights.w);
+	
+		// Interpolate Albedo/Height/Normal/Roughness
+		albedo_height = 
+			mat[0].alb_ht * weights[0] +
+			mat[1].alb_ht * weights[1] +
+			mat[2].alb_ht * weights[2] +
+			mat[3].alb_ht * weights[3] ;
+	
+		normal_rough = 
+			mat[0].nrm_rg * weights[0] +
+			mat[1].nrm_rg * weights[1] +
+			mat[2].nrm_rg * weights[2] +
+			mat[3].nrm_rg * weights[3] ;
+
+		normal_map_depth = 
+			mat[0].nrm_depth * weights[0] +
+			mat[1].nrm_depth * weights[1] +
+			mat[2].nrm_depth * weights[2] +
+			mat[3].nrm_depth * weights[3] ;
+		
+		ao_strength = 
+			mat[0].ao_str * weights[0] +
+			mat[1].ao_str * weights[1] +
+			mat[2].ao_str * weights[2] +
+			mat[3].ao_str * weights[3] ;
+	}
+	
+	// Macro variation. 2 lookups
+	vec3 macrov = vec3(1.);
+	if (enable_macro_variation) {
+		float noise1 = texture(noise_texture, rotate(uv * noise1_scale * .1, cos(noise1_angle), sin(noise1_angle)) + noise1_offset).r;
+		float noise2 = texture(noise_texture, uv * noise2_scale * .1).r;
+		macrov = mix(macro_variation1, vec3(1.), noise1);
+		macrov *= mix(macro_variation2, vec3(1.), noise2);
+		macrov = mix(vec3(1.0), macrov, clamp(w_normal.y + macro_variation_slope, 0., 1.));
+	}
+	
+	// Wetness/roughness modifier, converting 0 - 1 range to -1 to 1 range
+	float roughness = fma(color_map.a - 0.5, 2.0, normal_rough.a);
+	
+	// Apply PBR
+	ALBEDO = albedo_height.rgb * color_map.rgb * macrov;
+	ROUGHNESS = roughness;
+	SPECULAR = 1. - normal_rough.a;
+	NORMAL_MAP = pack_normal(normal_rough.rgb);
+	NORMAL_MAP_DEPTH = normal_map_depth;
+
+	// Higher and/or facing up, less occluded.
+	float ao = (1. - (albedo_height.a * log(2.1 - ao_strength))) * (1. - normal_rough.y);
+	AO = clamp(1. - ao * ao_strength, albedo_height.a, 1.0);
+	AO_LIGHT_AFFECT = 1. - albedo_height.a;
+
+}
+
+"
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_6wot6"]
+_shader_parameters = {
+&"bias_distance": 512.0,
+&"blend_sharpness": 0.87,
+&"depth_blur": 0.0,
+&"enable_macro_variation": true,
+&"enable_projection": true,
+&"height_blending": true,
+&"macro_variation1": Color(1, 1, 1, 1),
+&"macro_variation2": Color(1, 1, 1, 1),
+&"macro_variation_slope": 0.333,
+&"mipmap_bias": 1.0,
+&"noise1_angle": 0.0,
+&"noise1_offset": Vector2(0.5, 0.5),
+&"noise1_scale": 0.04,
+&"noise2_scale": 0.076,
+&"noise3_scale": 0.225,
+&"noise_texture": SubResource("NoiseTexture2D_1l5p7"),
+&"projection_angular_division": 2.0,
+&"projection_threshold": 0.8,
+&"world_space_normal_blend": true
+}
+shader_override = SubResource("Shader_2c7t1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2c7t1"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 128.0
+distance_fade_max_distance = 96.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_0vjmo"]
+generated_type = 1
+height_offset = 0.5
+material_override = SubResource("StandardMaterial3D_2c7t1")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_gcyph"]
+name = "bricks-075B-albedo"
+albedo_texture = ExtResource("1_6wot6")
+normal_texture = ExtResource("2_k6n5j")
+uv_scale = 1.0
+detiling_rotation = 0.145
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6iydg"]
+name = "bricks-076A-albedo"
+id = 1
+albedo_texture = ExtResource("3_2c7t1")
+normal_texture = ExtResource("4_0vjmo")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_4tc3r"]
+name = "ground-011-albedo"
+id = 2
+albedo_texture = ExtResource("5_ngenx")
+normal_texture = ExtResource("6_sb7ms")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_3hlwn"]
+name = "ground-018-albedo"
+id = 3
+albedo_texture = ExtResource("7_x6exp")
+normal_texture = ExtResource("8_pa5ag")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_yx7wi"]
+name = "ground-037-albedo"
+id = 4
+albedo_texture = ExtResource("9_x1gpk")
+normal_texture = ExtResource("10_ttf6y")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6x2vq"]
+name = "ground-038-albedo"
+id = 5
+albedo_texture = ExtResource("11_6vy0c")
+normal_texture = ExtResource("12_80pmf")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_qwrv1"]
+name = "ground-068-albedo"
+id = 6
+albedo_texture = ExtResource("13_o5bdp")
+normal_texture = ExtResource("14_glbn6")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_oexru"]
+name = "ground-081-albedo"
+id = 7
+albedo_texture = ExtResource("1_6wot6")
+normal_texture = ExtResource("2_k6n5j")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_y3lm1"]
+name = "ground-086-albedo"
+id = 8
+albedo_texture = ExtResource("15_w04or")
+normal_texture = ExtResource("16_lphry")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_jykr6"]
+name = "ground-088-albedo"
+id = 9
+albedo_texture = ExtResource("17_5k5n4")
+normal_texture = ExtResource("18_c6gac")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_1s0jk"]
+name = "pathway-004-albedo"
+id = 10
+albedo_texture = ExtResource("19_mogwu")
+normal_texture = ExtResource("20_40hhv")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_tpcer"]
+name = "pavingStones-069-albedo"
+id = 11
+albedo_texture = ExtResource("21_lo8sv")
+normal_texture = ExtResource("22_kxaid")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_3crgr"]
+name = "rock-011-albedo"
+id = 12
+albedo_texture = ExtResource("23_rbgv8")
+normal_texture = ExtResource("24_ir146")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_0kg5u"]
+name = "rock-030-albedo"
+id = 13
+albedo_texture = ExtResource("25_07vrw")
+normal_texture = ExtResource("26_y3r5x")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_wkns0"]
+name = "rock-031-albedo"
+id = 14
+albedo_texture = ExtResource("27_lnnge")
+normal_texture = ExtResource("28_k0oo6")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_w705k"]
+name = "rock-035-albedo"
+id = 15
+albedo_texture = ExtResource("29_soeri")
+normal_texture = ExtResource("30_k2mfg")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6lpen"]
+name = "rock-051-albedo"
+id = 16
+albedo_texture = ExtResource("31_2tlaa")
+normal_texture = ExtResource("32_s76je")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_j8gkk"]
+name = "rock-058-albedo"
+id = 17
+albedo_texture = ExtResource("33_cwguo")
+normal_texture = ExtResource("34_dcahr")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_gpxnc"]
+name = "tiles-084-albedo"
+id = 18
+albedo_texture = ExtResource("35_b8nby")
+normal_texture = ExtResource("36_tin0y")
+
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_1rjl6"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_0vjmo")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_gcyph"), SubResource("Terrain3DTextureAsset_6iydg"), SubResource("Terrain3DTextureAsset_4tc3r"), SubResource("Terrain3DTextureAsset_3hlwn"), SubResource("Terrain3DTextureAsset_yx7wi"), SubResource("Terrain3DTextureAsset_6x2vq"), SubResource("Terrain3DTextureAsset_qwrv1"), SubResource("Terrain3DTextureAsset_oexru"), SubResource("Terrain3DTextureAsset_y3lm1"), SubResource("Terrain3DTextureAsset_jykr6"), SubResource("Terrain3DTextureAsset_1s0jk"), SubResource("Terrain3DTextureAsset_tpcer"), SubResource("Terrain3DTextureAsset_3crgr"), SubResource("Terrain3DTextureAsset_0kg5u"), SubResource("Terrain3DTextureAsset_wkns0"), SubResource("Terrain3DTextureAsset_w705k"), SubResource("Terrain3DTextureAsset_6lpen"), SubResource("Terrain3DTextureAsset_j8gkk"), SubResource("Terrain3DTextureAsset_gpxnc")])
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0vjmo"]
+data = PackedVector3Array(-2.0511, -21.5167, 0.3373, -1.3371, -22.2308, 10.6319, -2.0511, -25.7158, 0.3373, -1.3371, -22.2308, 10.6319, -1.3371, -25.0017, 10.6319, -2.0511, -25.7158, 0.3373, -2.0511, -25.7158, 0.3373, -1.3371, -25.0017, 10.6319, 2.1479, -25.7158, 0.3373, -1.3371, -22.2308, 10.6319, -0.2946, -23.2733, 11.0959, -1.3371, -25.0017, 10.6319, -1.3371, -25.0017, 10.6319, 1.4339, -25.0017, 10.6319, 2.1479, -25.7158, 0.3373, -0.2946, -23.2733, 11.0959, -0.2946, -23.9592, 11.0959, -1.3371, -25.0017, 10.6319, -1.3371, -25.0017, 10.6319, -0.2946, -23.9592, 11.0959, 1.4339, -25.0017, 10.6319, -0.2946, -23.2733, 11.0959, 0.3914, -23.2733, 11.0959, -0.2946, -23.9592, 11.0959, 0.3914, -23.2733, 11.0959, -0.2946, -23.2733, 11.0959, -1.3371, -22.2308, 10.6319, -0.2946, -23.9592, 11.0959, 0.3914, -23.9592, 11.0959, 1.4339, -25.0017, 10.6319, 0.3914, -23.2733, 11.0959, 0.3914, -23.9592, 11.0959, -0.2946, -23.9592, 11.0959, 2.1479, -21.5167, 0.3373, 2.1479, -25.7158, 0.3373, 1.4339, -25.0017, 10.6319, 1.4339, -22.2308, 10.6319, 0.3914, -23.2733, 11.0959, -1.3371, -22.2308, 10.6319, 1.4339, -22.2308, 10.6319, 2.1479, -21.5167, 0.3373, 1.4339, -25.0017, 10.6319, 0.3914, -23.9592, 11.0959, 0.3914, -23.2733, 11.0959, 1.4339, -22.2308, 10.6319, 1.4339, -25.0017, 10.6319, 0.3914, -23.9592, 11.0959, 1.4339, -22.2308, 10.6319, 1.4339, -22.2308, 10.6319, -1.3371, -22.2308, 10.6319, -2.0511, -21.5167, 0.3373, 2.1479, -21.5167, 0.3373, 1.4339, -22.2308, 10.6319, -2.0511, -21.5167, 0.3373, -2.1488, 21.5158, 0.3373, -1.4348, 22.2298, 10.6319, 2.0502, 21.5158, 0.3373, -1.4348, 22.2298, 10.6319, 1.3362, 22.2298, 10.6319, 2.0502, 21.5158, 0.3373, 2.0502, 21.5158, 0.3373, 1.3362, 22.2298, 10.6319, 2.0502, 25.7148, 0.3373, 1.3362, 22.2298, 10.6319, 1.3362, 25.0008, 10.6319, 2.0502, 25.7148, 0.3373, -1.4348, 22.2298, 10.6319, -0.3923, 23.2724, 11.0959, 1.3362, 22.2298, 10.6319, -0.3923, 23.2724, 11.0959, 0.2937, 23.2724, 11.0959, 1.3362, 22.2298, 10.6319, 1.3362, 22.2298, 10.6319, 0.2937, 23.2724, 11.0959, 1.3362, 25.0008, 10.6319, -0.3923, 23.9583, 11.0959, -0.3923, 23.2724, 11.0959, -1.4348, 22.2298, 10.6319, 0.2937, 23.2724, 11.0959, -0.3923, 23.2724, 11.0959, 0.2937, 23.9583, 11.0959, -0.3923, 23.2724, 11.0959, -0.3923, 23.9583, 11.0959, 0.2937, 23.9583, 11.0959, 0.2937, 23.2724, 11.0959, 0.2937, 23.9583, 11.0959, 1.3362, 25.0008, 10.6319, -1.4348, 25.0008, 10.6319, -0.3923, 23.9583, 11.0959, -1.4348, 22.2298, 10.6319, 0.2937, 23.9583, 11.0959, -0.3923, 23.9583, 11.0959, -1.4348, 25.0008, 10.6319, 1.3362, 25.0008, 10.6319, 0.2937, 23.9583, 11.0959, -1.4348, 25.0008, 10.6319, -1.4348, 22.2298, 10.6319, -2.1488, 21.5158, 0.3373, -1.4348, 25.0008, 10.6319, -2.1488, 21.5158, 0.3373, -2.1488, 25.7148, 0.3373, -1.4348, 25.0008, 10.6319, 1.3362, 25.0008, 10.6319, -1.4348, 25.0008, 10.6319, -2.1488, 25.7148, 0.3373, 2.0502, 25.7148, 0.3373, 1.3362, 25.0008, 10.6319, -2.1488, 25.7148, 0.3373, -2.5723, 21.0923, 0.3373, -2.5723, 21.0923, -3.2004, -2.5723, 26.1384, 0.3373, -2.5723, 21.0923, -3.2004, -2.5723, 26.1384, -3.2004, -2.5723, 26.1384, 0.3373, 2.4737, 21.0923, -3.2004, -2.5723, 21.0923, -3.2004, -2.5723, 21.0923, 0.3373, 2.4737, 21.0923, 0.3373, 2.4737, 21.0923, -3.2004, -2.5723, 21.0923, 0.3373, -2.5723, 21.0923, 0.3373, -2.5723, 26.1384, 0.3373, -2.1488, 25.7148, 0.3373, -2.1488, 21.5158, 0.3373, -2.5723, 21.0923, 0.3373, -2.1488, 25.7148, 0.3373, 2.4737, 21.0923, 0.3373, -2.5723, 21.0923, 0.3373, -2.1488, 21.5158, 0.3373, -2.1488, 25.7148, 0.3373, -2.5723, 26.1384, 0.3373, 2.0502, 25.7148, 0.3373, 2.0502, 21.5158, 0.3373, 2.4737, 21.0923, 0.3373, -2.1488, 21.5158, 0.3373, -2.5723, 26.1384, 0.3373, 2.4737, 26.1384, 0.3373, 2.0502, 25.7148, 0.3373, 2.0502, 25.7148, 0.3373, 2.4737, 26.1384, 0.3373, 2.0502, 21.5158, 0.3373, 2.4737, 26.1384, 0.3373, 2.4737, 21.0923, 0.3373, 2.0502, 21.5158, 0.3373, -2.5723, 26.1384, 0.3373, -2.5723, 26.1384, -3.2004, 2.4737, 26.1384, 0.3373, -2.5723, 26.1384, -3.2004, 2.4737, 26.1384, -3.2004, 2.4737, 26.1384, 0.3373, 2.4737, 26.1384, 0.3373, 2.4737, 26.1384, -3.2004, 2.4737, 21.0923, 0.3373, 2.4737, 26.1384, -3.2004, 2.4737, 21.0923, -3.2004, 2.4737, 21.0923, 0.3373, 2.5714, -21.0932, 0.3373, 2.5714, -21.0932, -3.2004, 2.5714, -26.1393, 0.3373, 2.5714, -21.0932, -3.2004, 2.5714, -26.1393, -3.2004, 2.5714, -26.1393, 0.3373, -2.4746, -21.0932, -3.2004, 2.5714, -21.0932, -3.2004, 2.5714, -21.0932, 0.3373, -2.4746, -21.0932, 0.3373, -2.4746, -21.0932, -3.2004, 2.5714, -21.0932, 0.3373, 2.5714, -21.0932, 0.3373, 2.5714, -26.1393, 0.3373, 2.1479, -25.7158, 0.3373, 2.1479, -21.5167, 0.3373, 2.5714, -21.0932, 0.3373, 2.1479, -25.7158, 0.3373, -2.4746, -21.0932, 0.3373, 2.5714, -21.0932, 0.3373, 2.1479, -21.5167, 0.3373, 2.1479, -25.7158, 0.3373, 2.5714, -26.1393, 0.3373, -2.0511, -25.7158, 0.3373, -2.0511, -21.5167, 0.3373, -2.4746, -21.0932, 0.3373, 2.1479, -21.5167, 0.3373, 2.5714, -26.1393, 0.3373, -2.4746, -26.1393, 0.3373, -2.0511, -25.7158, 0.3373, -2.0511, -25.7158, 0.3373, -2.4746, -26.1393, 0.3373, -2.0511, -21.5167, 0.3373, -2.4746, -26.1393, 0.3373, -2.4746, -21.0932, 0.3373, -2.0511, -21.5167, 0.3373, 2.5714, -26.1393, 0.3373, 2.5714, -26.1393, -3.2004, -2.4746, -26.1393, 0.3373, 2.5714, -26.1393, -3.2004, -2.4746, -26.1393, -3.2004, -2.4746, -26.1393, 0.3373, -2.4746, -26.1393, 0.3373, -2.4746, -26.1393, -3.2004, -2.4746, -21.0932, 0.3373, -2.4746, -26.1393, -3.2004, -2.4746, -21.0932, -3.2004, -2.4746, -21.0932, 0.3373, 25.0008, 1.4339, 10.6319, 23.9583, 0.3914, 11.0959, 22.2298, 1.4339, 10.6319, 21.5158, 2.1479, 0.3373, 22.2298, 1.4339, 10.6319, 21.5158, -2.0511, 0.3373, 22.2298, 1.4339, 10.6319, 22.2298, -1.3371, 10.6319, 21.5158, -2.0511, 0.3373, 22.2298, 1.4339, 10.6319, 21.5158, 2.1479, 0.3373, 25.0008, 1.4339, 10.6319, 21.5158, 2.1479, 0.3373, 25.7148, 2.1479, 0.3373, 25.0008, 1.4339, 10.6319, 23.9583, 0.3914, 11.0959, 23.2724, 0.3914, 11.0959, 22.2298, 1.4339, 10.6319, 22.2298, 1.4339, 10.6319, 23.2724, 0.3914, 11.0959, 22.2298, -1.3371, 10.6319, 23.9583, -0.2946, 11.0959, 23.9583, 0.3914, 11.0959, 25.0008, 1.4339, 10.6319, 23.2724, 0.3914, 11.0959, 23.9583, 0.3914, 11.0959, 23.9583, -0.2946, 11.0959, 23.2724, -0.2946, 11.0959, 23.2724, 0.3914, 11.0959, 23.9583, -0.2946, 11.0959, 23.2724, 0.3914, 11.0959, 23.2724, -0.2946, 11.0959, 22.2298, -1.3371, 10.6319, 25.0008, -1.3371, 10.6319, 23.9583, -0.2946, 11.0959, 25.0008, 1.4339, 10.6319, 23.2724, -0.2946, 11.0959, 23.9583, -0.2946, 11.0959, 25.0008, -1.3371, 10.6319, 22.2298, -1.3371, 10.6319, 23.2724, -0.2946, 11.0959, 25.0008, -1.3371, 10.6319, 25.0008, -1.3371, 10.6319, 25.0008, 1.4339, 10.6319, 25.7148, 2.1479, 0.3373, 25.7148, -2.0511, 0.3373, 25.0008, -1.3371, 10.6319, 25.7148, 2.1479, 0.3373, 22.2298, -1.3371, 10.6319, 25.0008, -1.3371, 10.6319, 25.7148, -2.0511, 0.3373, 21.5158, -2.0511, 0.3373, 22.2298, -1.3371, 10.6319, 25.7148, -2.0511, 0.3373, 17.4417, 2.9633, -4.7453, 17.4562, 2.9678, -2.1887, 21.828, 3.652, -4.7636, 17.4562, 2.9678, -2.1887, 21.8914, 3.6719, -2.2249, 21.828, 3.652, -4.7636, 21.8914, 3.6719, -2.2249, 19.3403, 9.5993, -2.3209, 21.828, 3.652, -4.7636, 19.3403, 9.5993, -2.3209, 19.3657, 9.6998, -4.7273, 21.828, 3.652, -4.7636, 19.3403, 9.5993, -2.3209, 21.8914, 3.6719, -2.2249, 17.4562, 2.9678, -2.1887, 15.8589, 7.8745, -2.1887, 19.3403, 9.5993, -2.3209, 17.4562, 2.9678, -2.1887, 19.3657, 9.6998, -4.7273, 19.3403, 9.5993, -2.3209, 15.8454, 7.87, -4.7453, 19.3403, 9.5993, -2.3209, 15.8589, 7.8745, -2.1887, 15.8454, 7.87, -4.7453, 16.8562, 16.3187, -2.2255, 20.7177, 11.0084, -2.2255, 12.6491, 12.3902, -2.1887, 20.7177, 11.0084, -2.2255, 15.6843, 8.2166, -2.1887, 12.6491, 12.3902, -2.1887, 20.7177, 11.0084, -2.2255, 16.8562, 16.3187, -2.2255, 20.7059, 10.9993, -4.7821, 20.7177, 11.0084, -2.2255, 20.7059, 10.9993, -4.7821, 15.6725, 8.2075, -4.7453, 15.6843, 8.2166, -2.1887, 20.7177, 11.0084, -2.2255, 15.6725, 8.2075, -4.7453, 16.8562, 16.3187, -2.2255, 16.8435, 16.3096, -4.7821, 20.7059, 10.9993, -4.7821, 16.8562, 16.3187, -2.2255, 12.6491, 12.3902, -2.1887, 16.8435, 16.3096, -4.7821, 12.6491, 12.3902, -2.1887, 12.6373, 12.3812, -4.7453, 16.8435, 16.3096, -4.7821, 21.0923, 2.5714, 0.3373, 21.0923, 2.5714, -3.2004, 26.1384, 2.5714, 0.3373, 21.0923, 2.5714, -3.2004, 26.1384, 2.5714, -3.2004, 26.1384, 2.5714, 0.3373, 21.0923, -2.4746, -3.2004, 21.0923, 2.5714, -3.2004, 21.0923, 2.5714, 0.3373, 21.0923, -2.4746, 0.3373, 21.0923, -2.4746, -3.2004, 21.0923, 2.5714, 0.3373, 21.0923, 2.5714, 0.3373, 26.1384, 2.5714, 0.3373, 25.7148, 2.1479, 0.3373, 21.5158, 2.1479, 0.3373, 21.0923, 2.5714, 0.3373, 25.7148, 2.1479, 0.3373, 21.0923, -2.4746, 0.3373, 21.0923, 2.5714, 0.3373, 21.5158, 2.1479, 0.3373, 25.7148, 2.1479, 0.3373, 26.1384, 2.5714, 0.3373, 25.7148, -2.0511, 0.3373, 21.5158, -2.0511, 0.3373, 21.0923, -2.4746, 0.3373, 21.5158, 2.1479, 0.3373, 26.1384, 2.5714, 0.3373, 26.1384, -2.4746, 0.3373, 25.7148, -2.0511, 0.3373, 25.7148, -2.0511, 0.3373, 26.1384, -2.4746, 0.3373, 21.5158, -2.0511, 0.3373, 26.1384, -2.4746, 0.3373, 21.0923, -2.4746, 0.3373, 21.5158, -2.0511, 0.3373, 26.1384, 2.5714, 0.3373, 26.1384, 2.5714, -3.2004, 26.1384, -2.4746, 0.3373, 26.1384, 2.5714, -3.2004, 26.1384, -2.4746, -3.2004, 26.1384, -2.4746, 0.3373, 26.1384, -2.4746, 0.3373, 26.1384, -2.4746, -3.2004, 21.0923, -2.4746, 0.3373, 26.1384, -2.4746, -3.2004, 21.0923, -2.4746, -3.2004, 21.0923, -2.4746, 0.3373, -18.2399, -0.0005, -1.9394, -17.4517, -4.6764, -1.9687, -18.21, -0.0005, -6.8358, -17.4517, -4.6764, -1.9687, -17.5892, -4.7135, -6.8358, -18.21, -0.0005, -6.8358, -18.2399, -0.0005, -1.9394, -18.21, -0.0005, -6.8358, -17.3947, 4.6601, -1.9892, -17.4517, -4.6764, -1.9687, -15.6092, -9.0075, -1.972, -17.5892, -4.7135, -6.8358, -18.21, -0.0005, -6.8358, -17.5892, 4.7126, -6.8358, -17.3947, 4.6601, -1.9892, -15.6092, -9.0075, -1.972, -15.7703, -9.1052, -6.8358, -17.5892, -4.7135, -6.8358, -17.3947, 4.6601, -1.9892, -17.5892, 4.7126, -6.8358, -15.5603, 8.9831, -2.0105, -17.5892, 4.7126, -6.8358, -15.7703, 9.1043, -6.8358, -15.5603, 8.9831, -2.0105, -17.3947, 4.6601, -1.9892, -17.3078, 4.6302, -1.5822, -18.2399, -0.0005, -1.9394, -18.2399, -0.0005, -1.9394, -18.0453, -0.2566, -1.5642, -17.4517, -4.6764, -1.9687, -17.3078, 4.6302, -1.5822, -18.0453, -0.2566, -1.5642, -18.2399, -0.0005, -1.9394, -18.0453, -0.2566, -1.5642, -17.3449, -4.6429, -1.5736, -17.4517, -4.6764, -1.9687, -17.4517, -4.6764, -1.9687, -17.3449, -4.6429, -1.5736, -15.6092, -9.0075, -1.972, -15.5603, 8.9831, -2.0105, -15.4915, 8.9342, -1.5864, -17.3947, 4.6601, -1.9892, -15.4915, 8.9342, -1.5864, -17.3078, 4.6302, -1.5822, -17.3947, 4.6601, -1.9892, -18.0453, -0.2566, -1.5642, -17.3078, 4.6302, -1.5822, -17.1051, -0.252, -0.4949, -18.0453, -0.2566, -1.5642, -17.1051, -0.252, -0.4949, -17.3449, -4.6429, -1.5736, -15.4915, 8.9342, -1.5864, -14.8074, 8.5414, -0.5815, -17.3078, 4.6302, -1.5822, -12.6092, 12.6038, -1.5858, -15.4915, 8.9342, -1.5864, -15.5603, 8.9831, -2.0105, -15.4915, 8.9342, -1.5864, -12.6092, 12.6038, -1.5858, -14.8074, 8.5414, -0.5815, -15.5603, 8.9831, -2.0105, -15.7703, 9.1043, -6.8358, -12.6699, 12.669, -2.0346, -12.6699, 12.669, -2.0346, -12.6092, 12.6038, -1.5858, -15.5603, 8.9831, -2.0105, -15.7703, 9.1043, -6.8358, -12.8762, 12.8753, -6.8358, -12.6699, 12.669, -2.0346, -8.9016, 15.4282, -1.6041, -12.6092, 12.6038, -1.5858, -12.6699, 12.669, -2.0346, -12.6699, 12.669, -2.0346, -12.8762, 12.8753, -6.8358, -8.9586, 15.5151, -2.0326, -8.9586, 15.5151, -2.0326, -8.9016, 15.4282, -1.6041, -12.6699, 12.669, -2.0346, -12.8762, 12.8753, -6.8358, -9.1052, 15.7694, -6.8358, -8.9586, 15.5151, -2.0326, -8.9586, 15.5151, -2.0326, -9.1052, 15.7694, -6.8358, -4.7135, 17.5883, -6.8358, -4.6556, 17.3747, -1.9961, -8.9586, 15.5151, -2.0326, -4.7135, 17.5883, -6.8358, -8.9586, 15.5151, -2.0326, -4.6556, 17.3747, -1.9961, -8.9016, 15.4282, -1.6041, -4.6556, 17.3747, -1.9961, -4.7135, 17.5883, -6.8358, -0.0005, 18.2091, -6.8358, -12.6092, 12.6038, -1.5858, -8.9016, 15.4282, -1.6041, -12.0816, 12.0816, -0.6485, -12.6092, 12.6038, -1.5858, -12.0816, 12.0816, -0.6485, -14.8074, 8.5414, -0.5815, -4.6556, 17.3747, -1.9961, -4.6239, 17.2915, -1.585, -8.9016, 15.4282, -1.6041, -8.9016, 15.4282, -1.6041, -4.6239, 17.2915, -1.585, -8.5424, 14.8047, -0.6335, -8.9016, 15.4282, -1.6041, -8.5424, 14.8047, -0.6335, -12.0816, 12.0816, -0.6485, -0.214, 17.9802, -1.5858, -4.6239, 17.2915, -1.585, -4.6556, 17.3747, -1.9961, -0.0005, 18.1865, -1.9491, -4.6556, 17.3747, -1.9961, -0.0005, 18.2091, -6.8358, -0.0005, 18.1865, -1.9491, -0.214, 17.9802, -1.5858, -4.6556, 17.3747, -1.9961, -0.0005, 18.1865, -1.9491, -0.0005, 18.2091, -6.8358, 4.6528, 17.3675, -2.003, -0.0005, 18.2091, -6.8358, 4.7126, 17.5883, -6.8358, 4.6528, 17.3675, -2.003, 4.623, 17.2879, -1.5822, -0.214, 17.9802, -1.5858, -0.0005, 18.1865, -1.9491, 4.6528, 17.3675, -2.003, 4.623, 17.2879, -1.5822, -0.0005, 18.1865, -1.9491, -4.6239, 17.2915, -1.585, -0.214, 17.9802, -1.5858, -4.4004, 16.515, -0.5442, -4.6239, 17.2915, -1.585, -4.4004, 16.515, -0.5442, -8.5424, 14.8047, -0.6335, -0.214, 17.9802, -1.5858, -0.195, 17.0137, -0.4982, -4.4004, 16.515, -0.5442, -0.214, 17.9802, -1.5858, 4.623, 17.2879, -1.5822, -0.195, 17.0137, -0.4982, -4.4004, 16.515, -0.5442, -4.1958, 15.7322, -0.5124, -8.5424, 14.8047, -0.6335, -4.4004, 16.515, -0.5442, -0.195, 17.0137, -0.4982, -4.1958, 15.7322, -0.5124, -4.1958, 15.7322, -0.5124, -8.1369, 14.0979, -0.5326, -8.5424, 14.8047, -0.6335, -8.5424, 14.8047, -0.6335, -8.1369, 14.0979, -0.5326, -12.0816, 12.0816, -0.6485, 4.623, 17.2879, -1.5822, 4.3995, 16.5141, -0.5464, -0.195, 17.0137, -0.4982, -0.195, 17.0137, -0.4982, -0.1878, 16.1829, -0.5389, -4.1958, 15.7322, -0.5124, 4.3995, 16.5141, -0.5464, 4.194, 15.7268, -0.5126, -0.195, 17.0137, -0.4982, 4.194, 15.7268, -0.5126, -0.1878, 16.1829, -0.5389, -0.195, 17.0137, -0.4982, -4.1958, 15.7322, -0.5124, -0.1878, 16.1829, -0.5389, -4.0447, 15.1558, -0.8529, -4.1958, 15.7322, -0.5124, -4.0447, 15.1558, -0.8529, -8.1369, 14.0979, -0.5326, 8.5414, 14.8047, -0.6382, 4.3995, 16.5141, -0.5464, 4.623, 17.2879, -1.5822, 4.3995, 16.5141, -0.5464, 8.5414, 14.8047, -0.6382, 4.194, 15.7268, -0.5126, 8.8989, 15.4246, -1.6038, 8.5414, 14.8047, -0.6382, 4.623, 17.2879, -1.5822, 8.8989, 15.4246, -1.6038, 4.623, 17.2879, -1.5822, 4.6528, 17.3675, -2.003, 8.5414, 14.8047, -0.6382, 8.1044, 14.0345, -0.5196, 4.194, 15.7268, -0.5126, 8.9577, 15.516, -2.034, 8.8989, 15.4246, -1.6038, 4.6528, 17.3675, -2.003, 4.6528, 17.3675, -2.003, 4.7126, 17.5883, -6.8358, 8.9577, 15.516, -2.034, 4.7126, 17.5883, -6.8358, 9.1043, 15.7694, -6.8358, 8.9577, 15.516, -2.034, 11.9667, 12.0744, -0.532, 8.5414, 14.8047, -0.6382, 8.8989, 15.4246, -1.6038, 8.5414, 14.8047, -0.6382, 11.9667, 12.0744, -0.532, 8.1044, 14.0345, -0.5196, 12.6083, 12.6029, -1.5866, 8.8989, 15.4246, -1.6038, 8.9577, 15.516, -2.034, 12.6083, 12.6029, -1.5866, 11.9667, 12.0744, -0.532, 8.8989, 15.4246, -1.6038, 8.9577, 15.516, -2.034, 9.1043, 15.7694, -6.8358, 12.6681, 12.6681, -2.0351, 12.6681, 12.6681, -2.0351, 12.6083, 12.6029, -1.5866, 8.9577, 15.516, -2.034, 9.1043, 15.7694, -6.8358, 12.8753, 12.8753, -6.8358, 12.6681, 12.6681, -2.0351, 12.6681, 12.6681, -2.0351, 12.8753, 12.8753, -6.8358, 15.7694, 9.1043, -6.8358, 15.5621, 8.984, -2.0097, 12.6681, 12.6681, -2.0351, 15.7694, 9.1043, -6.8358, 12.6681, 12.6681, -2.0351, 15.5621, 8.984, -2.0097, 12.6083, 12.6029, -1.5866, 15.5621, 8.984, -2.0097, 15.7694, 9.1043, -6.8358, 17.5883, 4.7126, -6.8358, 17.401, 4.6619, -1.9798, 15.5621, 8.984, -2.0097, 17.5883, 4.7126, -6.8358, 17.401, 4.6619, -1.9798, 17.5883, 4.7126, -6.8358, 18.2091, -0.0005, -6.8358, 15.5621, 8.984, -2.0097, 15.4915, 8.9351, -1.5847, 12.6083, 12.6029, -1.5866, 15.5621, 8.984, -2.0097, 17.401, 4.6619, -1.9798, 15.4915, 8.9351, -1.5847, 15.4915, 8.9351, -1.5847, 14.8083, 8.5433, -0.5815, 12.6083, 12.6029, -1.5866, 14.8083, 8.5433, -0.5815, 11.9667, 12.0744, -0.532, 12.6083, 12.6029, -1.5866, 17.401, 4.6619, -1.9798, 17.3087, 4.6302, -1.5817, 15.4915, 8.9351, -1.5847, 15.4915, 8.9351, -1.5847, 17.3087, 4.6302, -1.5817, 14.8083, 8.5433, -0.5815, 18.2317, -0.0005, -1.9419, 17.401, 4.6619, -1.9798, 18.2091, -0.0005, -6.8358, 17.401, 4.6619, -1.9798, 18.2317, -0.0005, -1.9419, 17.3087, 4.6302, -1.5817, 18.2317, -0.0005, -1.9419, 18.2091, -0.0005, -6.8358, 17.4526, -4.6764, -1.9662, 18.2091, -0.0005, -6.8358, 17.5883, -4.7135, -6.8358, 17.4526, -4.6764, -1.9662, 18.2317, -0.0005, -1.9419, 18.2191, -0.0005, -1.52, 17.3087, 4.6302, -1.5817, 17.3566, -4.6456, -1.567, 18.2191, -0.0005, -1.52, 18.2317, -0.0005, -1.9419, 17.4526, -4.6764, -1.9662, 17.3566, -4.6456, -1.567, 18.2317, -0.0005, -1.9419, 17.3087, 4.6302, -1.5817, 18.2191, -0.0005, -1.52, 16.5178, 4.3995, -0.5077, 17.3087, 4.6302, -1.5817, 16.5178, 4.3995, -0.5077, 14.8083, 8.5433, -0.5815, 18.2191, -0.0005, -1.52, 17.1304, -0.2023, -0.4963, 16.5178, 4.3995, -0.5077, 18.2191, -0.0005, -1.52, 17.3566, -4.6456, -1.567, 17.1304, -0.2023, -0.4963, 17.4526, -4.6764, -1.9662, 17.5883, -4.7135, -6.8358, 15.6046, -9.0102, -1.9867, 17.5883, -4.7135, -6.8358, 15.7694, -9.1052, -6.8358, 15.6046, -9.0102, -1.9867, 15.5259, -8.9604, -1.583, 17.3566, -4.6456, -1.567, 17.4526, -4.6764, -1.9662, 15.6046, -9.0102, -1.9867, 15.5259, -8.9604, -1.583, 17.4526, -4.6764, -1.9662, 15.6046, -9.0102, -1.9867, 15.7694, -9.1052, -6.8358, 12.7187, -12.7196, -1.9978, 15.7694, -9.1052, -6.8358, 12.8753, -12.8762, -6.8358, 12.7187, -12.7196, -1.9978, 12.6509, -12.6518, -1.5861, 15.5259, -8.9604, -1.583, 15.6046, -9.0102, -1.9867, 12.7187, -12.7196, -1.9978, 12.6509, -12.6518, -1.5861, 15.6046, -9.0102, -1.9867, 12.7187, -12.7196, -1.9978, 12.8753, -12.8762, -6.8358, 9.1043, -15.7703, -6.8358, 15.5259, -8.9604, -1.583, 14.8047, -8.5424, -0.5497, 17.3566, -4.6456, -1.567, 15.5259, -8.9604, -1.583, 12.6509, -12.6518, -1.5861, 14.8047, -8.5424, -0.5497, 9.0021, -15.5938, -1.9906, 12.7187, -12.7196, -1.9978, 9.1043, -15.7703, -6.8358, 9.0021, -15.5938, -1.9906, 9.1043, -15.7703, -6.8358, 4.7126, -17.5892, -6.8358, 8.9396, -15.4961, -1.6016, 12.6509, -12.6518, -1.5861, 12.7187, -12.7196, -1.9978, 9.0021, -15.5938, -1.9906, 8.9396, -15.4961, -1.6016, 12.7187, -12.7196, -1.9978, 4.6791, -17.4661, -1.9646, 9.0021, -15.5938, -1.9906, 4.7126, -17.5892, -6.8358, 9.0021, -15.5938, -1.9906, 4.6791, -17.4661, -1.9646, 8.9396, -15.4961, -1.6016, 4.6791, -17.4661, -1.9646, 4.7126, -17.5892, -6.8358, -0.0005, -18.21, -6.8358, 8.9396, -15.4961, -1.6016, 8.5469, -14.8083, -0.5345, 12.6509, -12.6518, -1.5861, 4.6791, -17.4661, -1.9646, 4.6474, -17.3612, -1.5653, 8.9396, -15.4961, -1.6016, 8.9396, -15.4961, -1.6016, 4.6474, -17.3612, -1.5653, 8.5469, -14.8083, -0.5345, -0.0005, -18.2851, -1.9366, 4.6791, -17.4661, -1.9646, -0.0005, -18.21, -6.8358, 4.6791, -17.4661, -1.9646, -0.0005, -18.2851, -1.9366, 4.6474, -17.3612, -1.5653, -0.0005, -18.2851, -1.9366, -0.0005, -18.21, -6.8358, -4.6782, -17.4652, -1.959, -0.0005, -18.21, -6.8358, -4.7135, -17.5892, -6.8358, -4.6782, -17.4652, -1.959, -4.6782, -17.4652, -1.959, -4.7135, -17.5892, -6.8358, -8.3686, -15.9241, -2.1463, -4.7135, -17.5892, -6.8358, -8.3858, -15.9531, -7.0352, -8.3686, -15.9241, -2.1463, -4.6782, -17.4652, -1.959, -4.6465, -17.3603, -1.5615, -0.0005, -18.2851, -1.9366, -4.6782, -17.4652, -1.959, -8.3686, -15.9241, -2.1463, -4.6465, -17.3603, -1.5615, -8.3686, -15.9241, -2.1463, -8.3858, -15.9531, -7.0352, -12.5577, -12.8889, -6.9915, -0.0005, -18.2851, -1.9366, -0.0023, -18.2661, -1.4959, 4.6474, -17.3612, -1.5653, -4.6465, -17.3603, -1.5615, -0.0023, -18.2661, -1.4959, -0.0005, -18.2851, -1.9366, 4.6474, -17.3612, -1.5653, -0.0023, -18.2661, -1.4959, 4.3958, -16.4997, -0.4996, 4.6474, -17.3612, -1.5653, 4.3958, -16.4997, -0.4996, 8.5469, -14.8083, -0.5345, -0.0023, -18.2661, -1.4959, -4.6465, -17.3603, -1.5615, -0.1905, -17.1105, -0.4969, -0.0023, -18.2661, -1.4959, -0.1905, -17.1105, -0.4969, 4.3958, -16.4997, -0.4996, -12.5522, -12.8834, -2.1004, -8.3686, -15.9241, -2.1463, -12.5577, -12.8889, -6.9915, -12.5522, -12.8834, -2.1004, -12.5577, -12.8889, -6.9915, -15.7703, -9.1052, -6.8358, -15.6092, -9.0075, -1.972, -12.5522, -12.8834, -2.1004, -15.7703, -9.1052, -6.8358, -8.3686, -15.9241, -2.1463, -12.5522, -12.8834, -2.1004, -8.679, -15.6526, -1.6005, -8.3686, -15.9241, -2.1463, -8.679, -15.6526, -1.6005, -4.6465, -17.3603, -1.5615, -12.5522, -12.8834, -2.1004, -15.6092, -9.0075, -1.972, -12.6454, -12.6427, -1.5681, -12.5522, -12.8834, -2.1004, -12.6454, -12.6427, -1.5681, -8.679, -15.6526, -1.6005, -15.6092, -9.0075, -1.972, -15.5232, -8.9568, -1.5789, -12.6454, -12.6427, -1.5681, -17.3449, -4.6429, -1.5736, -15.5232, -8.9568, -1.5789, -15.6092, -9.0075, -1.972, -15.5232, -8.9568, -1.5789, -14.8101, -8.5433, -0.5326, -12.6454, -12.6427, -1.5681, -15.5232, -8.9568, -1.5789, -17.3449, -4.6429, -1.5736, -14.8101, -8.5433, -0.5326, -4.6465, -17.3603, -1.5615, -8.679, -15.6526, -1.6005, -4.3949, -16.5006, -0.4977, -4.6465, -17.3603, -1.5615, -4.3949, -16.5006, -0.4977, -0.1905, -17.1105, -0.4969, -8.679, -15.6526, -1.6005, -12.6454, -12.6427, -1.5681, -8.5451, -14.8074, -0.5367, -8.679, -15.6526, -1.6005, -8.5451, -14.8074, -0.5367, -4.3949, -16.5006, -0.4977, -12.6454, -12.6427, -1.5681, -12.0898, -12.0898, -0.5646, -8.5451, -14.8074, -0.5367, -14.8101, -8.5433, -0.5326, -12.0898, -12.0898, -0.5646, -12.6454, -12.6427, -1.5681, -17.3449, -4.6429, -1.5736, -16.5105, -4.3967, -0.5135, -14.8101, -8.5433, -0.5326, -17.1051, -0.252, -0.4949, -16.5105, -4.3967, -0.5135, -17.3449, -4.6429, -1.5736, -16.5105, -4.3967, -0.5135, -15.7304, -4.1922, -0.5049, -14.8101, -8.5433, -0.5326, -16.5105, -4.3967, -0.5135, -17.1051, -0.252, -0.4949, -15.7304, -4.1922, -0.5049, -14.8101, -8.5433, -0.5326, -14.1368, -8.1596, -0.5539, -12.0898, -12.0898, -0.5646, -15.7304, -4.1922, -0.5049, -14.1368, -8.1596, -0.5539, -14.8101, -8.5433, -0.5326, -12.0898, -12.0898, -0.5646, -11.5423, -11.5495, -0.498, -8.5451, -14.8074, -0.5367, -14.1368, -8.1596, -0.5539, -11.5423, -11.5495, -0.498, -12.0898, -12.0898, -0.5646, -11.5423, -11.5495, -0.498, -8.1107, -14.0517, -0.5157, -8.5451, -14.8074, -0.5367, -8.5451, -14.8074, -0.5367, -8.1107, -14.0517, -0.5157, -4.3949, -16.5006, -0.4977, -14.1368, -8.1596, -0.5539, -13.649, -7.8863, -0.8582, -11.5423, -11.5495, -0.498, -14.1368, -8.1596, -0.5539, -15.7304, -4.1922, -0.5049, -13.649, -7.8863, -0.8582, -11.5423, -11.5495, -0.498, -11.1396, -11.1541, -0.8242, -8.1107, -14.0517, -0.5157, -13.649, -7.8863, -0.8582, -11.1396, -11.1541, -0.8242, -11.5423, -11.5495, -0.498, -8.1107, -14.0517, -0.5157, -4.1949, -15.7503, -0.5027, -4.3949, -16.5006, -0.4977, -13.649, -7.8863, -0.8582, -11.897, -6.9723, -0.8839, -11.1396, -11.1541, -0.8242, -4.3949, -16.5006, -0.4977, -4.1949, -15.7503, -0.5027, -0.1824, -16.2653, -0.5469, -0.1905, -17.1105, -0.4969, -4.3949, -16.5006, -0.4977, -0.1824, -16.2653, -0.5469, -0.1905, -17.1105, -0.4969, -0.1824, -16.2653, -0.5469, 4.3958, -16.4997, -0.4996, -4.1949, -15.7503, -0.5027, -8.1107, -14.0517, -0.5157, -4.061, -15.2445, -0.8565, -4.1949, -15.7503, -0.5027, -4.061, -15.2445, -0.8565, -0.1824, -16.2653, -0.5469, -11.1396, -11.1541, -0.8242, -7.7885, -13.4925, -0.9354, -8.1107, -14.0517, -0.5157, -8.1107, -14.0517, -0.5157, -7.7885, -13.4925, -0.9354, -4.061, -15.2445, -0.8565, -11.1396, -11.1541, -0.8242, -9.7351, -9.7794, -0.8753, -7.7885, -13.4925, -0.9354, -11.897, -6.9723, -0.8839, -9.7351, -9.7794, -0.8753, -11.1396, -11.1541, -0.8242, -9.7351, -9.7794, -0.8753, -6.9867, -11.8817, -1.0967, -7.7885, -13.4925, -0.9354, -0.1824, -16.2653, -0.5469, 4.1986, -15.7458, -0.5049, 4.3958, -16.4997, -0.4996, 4.3958, -16.4997, -0.4996, 4.1986, -15.7458, -0.5049, 8.5469, -14.8083, -0.5345, 4.1986, -15.7458, -0.5049, -0.1824, -16.2653, -0.5469, 4.0637, -15.2445, -0.8585, -7.7885, -13.4925, -0.9354, -6.9867, -11.8817, -1.0967, -3.5714, -13.1938, -0.882, -4.061, -15.2445, -0.8565, -7.7885, -13.4925, -0.9354, -3.5714, -13.1938, -0.882, -4.061, -15.2445, -0.8565, -0.1769, -15.6626, -1.1318, -0.1824, -16.2653, -0.5469, -0.1824, -16.2653, -0.5469, -0.1769, -15.6626, -1.1318, 4.0637, -15.2445, -0.8585, -4.061, -15.2445, -0.8565, -3.5714, -13.1938, -0.882, -0.1769, -15.6626, -1.1318, 4.1986, -15.7458, -0.5049, 8.1424, -14.1051, -0.5193, 8.5469, -14.8083, -0.5345, 4.1986, -15.7458, -0.5049, 4.0637, -15.2445, -0.8585, 8.1424, -14.1051, -0.5193, 8.5469, -14.8083, -0.5345, 8.1424, -14.1051, -0.5193, 12.0898, -12.0925, -0.5608, 8.5469, -14.8083, -0.5345, 12.0898, -12.0925, -0.5608, 12.6509, -12.6518, -1.5861, 12.6509, -12.6518, -1.5861, 12.0898, -12.0925, -0.5608, 14.8047, -8.5424, -0.5497, -0.1769, -15.6626, -1.1318, -0.081, -13.7712, -0.8419, 4.0637, -15.2445, -0.8585, -3.5714, -13.1938, -0.882, -0.081, -13.7712, -0.8419, -0.1769, -15.6626, -1.1318, 4.0637, -15.2445, -0.8585, 7.8537, -13.602, -0.8399, 8.1424, -14.1051, -0.5193, 8.1424, -14.1051, -0.5193, 11.4645, -11.4717, -0.4991, 12.0898, -12.0925, -0.5608, 8.1424, -14.1051, -0.5193, 7.8537, -13.602, -0.8399, 11.4645, -11.4717, -0.4991, 12.0898, -12.0925, -0.5608, 11.4645, -11.4717, -0.4991, 14.0463, -8.117, -0.5965, 14.8047, -8.5424, -0.5497, 12.0898, -12.0925, -0.5608, 14.0463, -8.117, -0.5965, 7.8537, -13.602, -0.8399, 11.0011, -11.0111, -0.9442, 11.4645, -11.4717, -0.4991, 11.4645, -11.4717, -0.4991, 11.0011, -11.0111, -0.9442, 14.0463, -8.117, -0.5965, 4.0637, -15.2445, -0.8585, 3.5542, -13.2409, -0.8764, 7.8537, -13.602, -0.8399, -0.081, -13.7712, -0.8419, 3.5542, -13.2409, -0.8764, 4.0637, -15.2445, -0.8585, 3.5542, -13.2409, -0.8764, 6.8012, -11.7848, -0.9489, 7.8537, -13.602, -0.8399, 7.8537, -13.602, -0.8399, 6.8012, -11.7848, -0.9489, 11.0011, -11.0111, -0.9442, 3.0275, -11.4554, -0.4211, 3.5542, -13.2409, -0.8764, -0.081, -13.7712, -0.8419, 5.9107, -10.3016, -0.4343, 6.8012, -11.7848, -0.9489, 3.5542, -13.2409, -0.8764, 3.0275, -11.4554, -0.4211, 5.9107, -10.3016, -0.4343, 3.5542, -13.2409, -0.8764, 6.8012, -11.7848, -0.9489, 9.4446, -9.4591, -0.8665, 11.0011, -11.0111, -0.9442, 9.4446, -9.4591, -0.8665, 6.8012, -11.7848, -0.9489, 5.9107, -10.3016, -0.4343, 11.0011, -11.0111, -0.9442, 9.4446, -9.4591, -0.8665, 11.5405, -6.7044, -0.877, 8.4356, -8.2881, -0.4277, 9.4446, -9.4591, -0.8665, 5.9107, -10.3016, -0.4343, 11.5405, -6.7044, -0.877, 9.4446, -9.4591, -0.8665, 8.4356, -8.2881, -0.4277, 13.4708, -7.7967, -0.9849, 11.0011, -11.0111, -0.9442, 11.5405, -6.7044, -0.877, 11.0011, -11.0111, -0.9442, 13.4708, -7.7967, -0.9849, 14.0463, -8.117, -0.5965, 10.2681, -5.8365, -0.4545, 11.5405, -6.7044, -0.877, 8.4356, -8.2881, -0.4277, 6.66, -6.679, -0.3262, 8.4356, -8.2881, -0.4277, 5.9107, -10.3016, -0.4343, 10.2681, -5.8365, -0.4545, 8.4356, -8.2881, -0.4277, 6.66, -6.679, -0.3262, 13.4708, -7.7967, -0.9849, 11.5405, -6.7044, -0.877, 12.9966, -3.4692, -0.846, 12.9966, -3.4692, -0.846, 11.5405, -6.7044, -0.877, 10.2681, -5.8365, -0.4545, 14.0463, -8.117, -0.5965, 13.4708, -7.7967, -0.9849, 15.0771, -4.0212, -0.9583, 15.0771, -4.0212, -0.9583, 13.4708, -7.7967, -0.9849, 12.9966, -3.4692, -0.846, 15.6979, -4.1868, -0.5074, 14.0463, -8.117, -0.5965, 15.0771, -4.0212, -0.9583, 14.8047, -8.5424, -0.5497, 14.0463, -8.117, -0.5965, 15.6979, -4.1868, -0.5074, 15.0771, -4.0212, -0.9583, 12.9966, -3.4692, -0.846, 13.4038, -0.148, -0.8305, 16.5105, -4.3995, -0.5115, 14.8047, -8.5424, -0.5497, 15.6979, -4.1868, -0.5074, 14.8047, -8.5424, -0.5497, 16.5105, -4.3995, -0.5115, 17.3566, -4.6456, -1.567, 17.3566, -4.6456, -1.567, 16.5105, -4.3995, -0.5115, 17.1304, -0.2023, -0.4963, 16.5105, -4.3995, -0.5115, 15.6979, -4.1868, -0.5074, 16.2906, -0.1896, -0.5514, 17.1304, -0.2023, -0.4963, 16.5105, -4.3995, -0.5115, 16.2906, -0.1896, -0.5514, 15.6979, -4.1868, -0.5074, 15.0771, -4.0212, -0.9583, 16.2906, -0.1896, -0.5514, 17.1304, -0.2023, -0.4963, 16.2906, -0.1896, -0.5514, 16.5178, 4.3995, -0.5077, 15.0771, -4.0212, -0.9583, 15.6408, -0.1787, -1.0483, 16.2906, -0.1896, -0.5514, 15.6408, -0.1787, -1.0483, 15.0771, -4.0212, -0.9583, 13.4038, -0.148, -0.8305, 16.2906, -0.1896, -0.5514, 15.7377, 4.1958, -0.5002, 16.5178, 4.3995, -0.5077, 16.5178, 4.3995, -0.5077, 15.7377, 4.1958, -0.5002, 14.8083, 8.5433, -0.5815, 16.2906, -0.1896, -0.5514, 15.6408, -0.1787, -1.0483, 15.2074, 4.0547, -0.8554, 15.7377, 4.1958, -0.5002, 16.2906, -0.1896, -0.5514, 15.2074, 4.0547, -0.8554, 15.2074, 4.0547, -0.8554, 15.6408, -0.1787, -1.0483, 13.1432, 3.5081, -0.864, 15.6408, -0.1787, -1.0483, 13.4038, -0.148, -0.8305, 13.1432, 3.5081, -0.864, 15.7377, 4.1958, -0.5002, 15.2074, 4.0547, -0.8554, 14.1051, 8.1396, -0.5422, 15.7377, 4.1958, -0.5002, 14.1051, 8.1396, -0.5422, 14.8083, 8.5433, -0.5815, 15.2074, 4.0547, -0.8554, 13.1432, 3.5081, -0.864, 13.5884, 7.8419, -0.8698, 15.2074, 4.0547, -0.8554, 13.5884, 7.8419, -0.8698, 14.1051, 8.1396, -0.5422, 14.8083, 8.5433, -0.5815, 14.1051, 8.1396, -0.5422, 11.5215, 11.5369, -0.4927, 11.9667, 12.0744, -0.532, 14.8083, 8.5433, -0.5815, 11.5215, 11.5369, -0.4927, 11.9667, 12.0744, -0.532, 11.5215, 11.5369, -0.4927, 8.1044, 14.0345, -0.5196, 11.5215, 11.5369, -0.4927, 14.1051, 8.1396, -0.5422, 11.0916, 11.1224, -0.8078, 14.1051, 8.1396, -0.5422, 13.5884, 7.8419, -0.8698, 11.0916, 11.1224, -0.8078, 11.5215, 11.5369, -0.4927, 11.0916, 11.1224, -0.8078, 8.1044, 14.0345, -0.5196, 13.1432, 3.5081, -0.864, 11.7839, 6.7985, -0.89, 13.5884, 7.8419, -0.8698, 11.0916, 11.1224, -0.8078, 13.5884, 7.8419, -0.8698, 9.6672, 9.717, -0.8687, 13.5884, 7.8419, -0.8698, 11.7839, 6.7985, -0.89, 9.6672, 9.717, -0.8687, 11.0916, 11.1224, -0.8078, 7.7786, 13.4572, -0.895, 8.1044, 14.0345, -0.5196, 11.0916, 11.1224, -0.8078, 9.6672, 9.717, -0.8687, 7.7786, 13.4572, -0.895, 8.1044, 14.0345, -0.5196, 7.7786, 13.4572, -0.895, 4.0384, 15.1332, -0.8659, 4.194, 15.7268, -0.5126, 8.1044, 14.0345, -0.5196, 4.0384, 15.1332, -0.8659, 4.194, 15.7268, -0.5126, 4.0384, 15.1332, -0.8659, -0.1878, 16.1829, -0.5389, 11.7839, 6.7985, -0.89, 13.1432, 3.5081, -0.864, 11.3966, 3.0764, -0.4122, 11.3966, 3.0764, -0.4122, 13.1432, 3.5081, -0.864, 13.4038, -0.148, -0.8305, 4.0384, 15.1332, -0.8659, -0.1851, 15.5739, -1.0615, -0.1878, 16.1829, -0.5389, 4.0384, 15.1332, -0.8659, 7.7786, 13.4572, -0.895, 3.4348, 13.2816, -0.8817, 4.0384, 15.1332, -0.8659, 3.4348, 13.2816, -0.8817, -0.1851, 15.5739, -1.0615, -0.1878, 16.1829, -0.5389, -0.1851, 15.5739, -1.0615, -4.0447, 15.1558, -0.8529, 7.7786, 13.4572, -0.895, 6.6763, 11.5296, -0.8468, 3.4348, 13.2816, -0.8817, 9.6672, 9.717, -0.8687, 6.6763, 11.5296, -0.8468, 7.7786, 13.4572, -0.895, 3.4348, 13.2816, -0.8817, -0.1697, 13.6364, -0.9063, -0.1851, 15.5739, -1.0615, 6.6763, 11.5296, -0.8468, 9.6672, 9.717, -0.8687, 8.4012, 8.4428, -0.4872, 8.4012, 8.4428, -0.4872, 9.6672, 9.717, -0.8687, 11.7839, 6.7985, -0.89, 2.9361, 11.5459, -0.4457, 3.4348, 13.2816, -0.8817, 6.6763, 11.5296, -0.8468, -0.1697, 13.6364, -0.9063, 3.4348, 13.2816, -0.8817, 2.9361, 11.5459, -0.4457, 5.8555, 10.1559, -0.3995, 6.6763, 11.5296, -0.8468, 8.4012, 8.4428, -0.4872, 5.8555, 10.1559, -0.3995, 2.9361, 11.5459, -0.4457, 6.6763, 11.5296, -0.8468, 10.2066, 5.9288, -0.4172, 8.4012, 8.4428, -0.4872, 11.7839, 6.7985, -0.89, 10.2066, 5.9288, -0.4172, 11.7839, 6.7985, -0.89, 11.3966, 3.0764, -0.4122, 5.8555, 10.1559, -0.3995, 8.4012, 8.4428, -0.4872, 6.5659, 6.6248, -0.3259, 6.5659, 6.6248, -0.3259, 8.4012, 8.4428, -0.4872, 10.2066, 5.9288, -0.4172, 8.0654, 4.6899, -0.3466, 6.5659, 6.6248, -0.3259, 10.2066, 5.9288, -0.4172, 8.0654, 4.6899, -0.3466, 10.2066, 5.9288, -0.4172, 11.3966, 3.0764, -0.4122, 4.5171, 8.1813, -0.3356, 5.8555, 10.1559, -0.3995, 6.5659, 6.6248, -0.3259, 6.5659, 6.6248, -0.3259, 8.0654, 4.6899, -0.3466, 5.2845, 5.2112, 0.5694, 6.5659, 6.6248, -0.3259, 5.2845, 5.2112, 0.5694, 4.5171, 8.1813, -0.3356, 4.5171, 8.1813, -0.3356, 2.4185, 9.0057, -0.3101, 5.8555, 10.1559, -0.3995, 2.4185, 9.0057, -0.3101, 2.9361, 11.5459, -0.4457, 5.8555, 10.1559, -0.3995, 4.5171, 8.1813, -0.3356, 3.4845, 6.5795, 0.586, 2.4185, 9.0057, -0.3101, 5.2845, 5.2112, 0.5694, 3.4845, 6.5795, 0.586, 4.5171, 8.1813, -0.3356, 2.4185, 9.0057, -0.3101, -0.0683, 9.326, -0.3804, 2.9361, 11.5459, -0.4457, 3.4845, 6.5795, 0.586, 1.8013, 7.2148, 0.5912, 2.4185, 9.0057, -0.3101, 2.4185, 9.0057, -0.3101, 1.8013, 7.2148, 0.5912, -0.0683, 9.326, -0.3804, 1.8013, 7.2148, 0.5912, 3.4845, 6.5795, 0.586, 1.5181, 5.8284, 0.5899, -0.0683, 9.326, -0.3804, -0.2982, 11.7477, -0.3879, 2.9361, 11.5459, -0.4457, -0.2982, 11.7477, -0.3879, -0.1697, 13.6364, -0.9063, 2.9361, 11.5459, -0.4457, 1.8013, 7.2148, 0.5912, -0.071, 7.375, 0.5846, -0.0683, 9.326, -0.3804, -3.4782, 13.2364, -0.8557, -0.1697, 13.6364, -0.9063, -0.2982, 11.7477, -0.3879, -0.1851, 15.5739, -1.0615, -0.1697, 13.6364, -0.9063, -3.4782, 13.2364, -0.8557, -4.0447, 15.1558, -0.8529, -0.1851, 15.5739, -1.0615, -3.4782, 13.2364, -0.8557, -0.2982, 11.7477, -0.3879, -0.0683, 9.326, -0.3804, -2.4185, 8.9975, -0.3588, -0.071, 7.375, 0.5846, 1.8013, 7.2148, 0.5912, 0.0484, 5.9687, 0.6145, 1.8013, 7.2148, 0.5912, 1.5181, 5.8284, 0.5899, 0.0484, 5.9687, 0.6145, -0.0683, 9.326, -0.3804, -0.071, 7.375, 0.5846, -1.9262, 7.2121, 0.5345, -2.4185, 8.9975, -0.3588, -0.0683, 9.326, -0.3804, -1.9262, 7.2121, 0.5345, -0.071, 7.375, 0.5846, 0.0484, 5.9687, 0.6145, -1.5353, 5.7741, 0.6173, -1.9262, 7.2121, 0.5345, -0.071, 7.375, 0.5846, -1.5353, 5.7741, 0.6173, 1.5181, 5.8284, 0.5899, 1.4158, 5.3587, 0.2438, 0.0484, 5.9687, 0.6145, 1.4158, 5.3587, 0.2438, -0.0077, 5.5352, 0.2725, 0.0484, 5.9687, 0.6145, 0.0484, 5.9687, 0.6145, -0.0077, 5.5352, 0.2725, -1.5353, 5.7741, 0.6173, 2.5877, 4.8963, 0.2487, 1.4158, 5.3587, 0.2438, 1.5181, 5.8284, 0.5899, 1.4158, 5.3587, 0.2438, -0.0005, 0.0005, 0.1751, -0.0077, 5.5352, 0.2725, 2.5877, 4.8963, 0.2487, -0.0005, 0.0005, 0.1751, 1.4158, 5.3587, 0.2438, -0.0077, 5.5352, 0.2725, -1.4221, 5.3325, 0.2446, -1.5353, 5.7741, 0.6173, -0.0077, 5.5352, 0.2725, -0.0005, 0.0005, 0.1751, -1.4221, 5.3325, 0.2446, -1.9262, 7.2121, 0.5345, -1.5353, 5.7741, 0.6173, -3.7044, 6.4727, 0.5251, -2.4185, 8.9975, -0.3588, -1.9262, 7.2121, 0.5345, -3.7044, 6.4727, 0.5251, -1.5353, 5.7741, 0.6173, -1.4221, 5.3325, 0.2446, -2.985, 5.1596, 0.5628, -1.5353, 5.7741, 0.6173, -2.985, 5.1596, 0.5628, -3.7044, 6.4727, 0.5251, -1.4221, 5.3325, 0.2446, -0.0005, 0.0005, 0.1751, -2.7579, 4.7687, 0.2457, -1.4221, 5.3325, 0.2446, -2.7579, 4.7687, 0.2457, -2.985, 5.1596, 0.5628, -2.985, 5.1596, 0.5628, -2.7579, 4.7687, 0.2457, -3.9189, 3.9144, 0.2631, -2.7579, 4.7687, 0.2457, -0.0005, 0.0005, 0.1751, -3.9189, 3.9144, 0.2631, -3.7044, 6.4727, 0.5251, -2.985, 5.1596, 0.5628, -5.2492, 5.2908, 0.5459, -4.6574, 8.07, -0.4205, -2.4185, 8.9975, -0.3588, -3.7044, 6.4727, 0.5251, -4.6574, 8.07, -0.4205, -3.7044, 6.4727, 0.5251, -5.2492, 5.2908, 0.5459, -4.2366, 4.2058, 0.6015, -2.985, 5.1596, 0.5628, -3.9189, 3.9144, 0.2631, -2.985, 5.1596, 0.5628, -4.2366, 4.2058, 0.6015, -5.2492, 5.2908, 0.5459, -4.2366, 4.2058, 0.6015, -3.9189, 3.9144, 0.2631, -4.6863, 2.9588, 0.2532, -3.9189, 3.9144, 0.2631, -0.0005, 0.0005, 0.1751, -4.6863, 2.9588, 0.2532, -5.051, 3.1959, 0.6054, -4.2366, 4.2058, 0.6015, -4.6863, 2.9588, 0.2532, -4.6574, 8.07, -0.4205, -5.9687, 10.307, -0.4529, -2.4185, 8.9975, -0.3588, -4.2366, 4.2058, 0.6015, -5.051, 3.1959, 0.6054, -6.2736, 3.9198, 0.5686, -5.2492, 5.2908, 0.5459, -4.2366, 4.2058, 0.6015, -6.2736, 3.9198, 0.5686, -5.051, 3.1959, 0.6054, -4.6863, 2.9588, 0.2532, -5.8248, 1.5932, 0.6126, -6.2736, 3.9198, 0.5686, -5.051, 3.1959, 0.6054, -5.8248, 1.5932, 0.6126, -4.6863, 2.9588, 0.2532, -5.3343, 1.4258, 0.2557, -5.8248, 1.5932, 0.6126, -4.6863, 2.9588, 0.2532, -0.0005, 0.0005, 0.1751, -5.3343, 1.4258, 0.2557, -7.2003, 1.9081, 0.5885, -6.2736, 3.9198, 0.5686, -5.8248, 1.5932, 0.6126, -5.2492, 5.2908, 0.5459, -6.2736, 3.9198, 0.5686, -7.8781, 4.7768, -0.2694, -7.8781, 4.7768, -0.2694, -6.2736, 3.9198, 0.5686, -7.2003, 1.9081, 0.5885, -6.6012, 6.5922, -0.3508, -4.6574, 8.07, -0.4205, -5.2492, 5.2908, 0.5459, -6.6012, 6.5922, -0.3508, -5.2492, 5.2908, 0.5459, -7.8781, 4.7768, -0.2694, -4.6574, 8.07, -0.4205, -6.6012, 6.5922, -0.3508, -5.9687, 10.307, -0.4529, -5.8248, 1.5932, 0.6126, -5.3343, 1.4258, 0.2557, -6.0148, 0.0014, 0.6173, -7.2003, 1.9081, 0.5885, -5.8248, 1.5932, 0.6126, -6.0148, 0.0014, 0.6173, -6.6012, 6.5922, -0.3508, -7.8781, 4.7768, -0.2694, -8.4437, 8.4184, -0.4875, -6.6012, 6.5922, -0.3508, -8.4437, 8.4184, -0.4875, -5.9687, 10.307, -0.4529, -9.0021, 2.4067, -0.3901, -7.8781, 4.7768, -0.2694, -7.2003, 1.9081, 0.5885, -7.8781, 4.7768, -0.2694, -10.2573, 5.8773, -0.4241, -8.4437, 8.4184, -0.4875, -7.8781, 4.7768, -0.2694, -9.0021, 2.4067, -0.3901, -10.2573, 5.8773, -0.4241, -8.4437, 8.4184, -0.4875, -9.6183, 9.6962, -0.8767, -5.9687, 10.307, -0.4529, -10.2573, 5.8773, -0.4241, -11.7939, 6.9424, -0.9312, -8.4437, 8.4184, -0.4875, -11.7939, 6.9424, -0.9312, -9.6183, 9.6962, -0.8767, -8.4437, 8.4184, -0.4875, -13.2337, 3.5949, -0.8325, -11.7939, 6.9424, -0.9312, -10.2573, 5.8773, -0.4241, -9.0021, 2.4067, -0.3901, -11.4726, 2.9968, -0.4288, -10.2573, 5.8773, -0.4241, -11.4726, 2.9968, -0.4288, -13.2337, 3.5949, -0.8325, -10.2573, 5.8773, -0.4241, -9.0021, 2.4067, -0.3901, -7.2003, 1.9081, 0.5885, -9.1423, -0.0584, -0.2371, -11.7812, -0.1896, -0.3837, -11.4726, 2.9968, -0.4288, -9.0021, 2.4067, -0.3901, -9.1423, -0.0584, -0.2371, -11.7812, -0.1896, -0.3837, -9.0021, 2.4067, -0.3901, -7.2003, 1.9081, 0.5885, -7.4392, 0.0294, 0.5852, -9.1423, -0.0584, -0.2371, -7.4392, 0.0294, 0.5852, -7.2003, 1.9081, 0.5885, -6.0148, 0.0014, 0.6173, -9.1423, -0.0584, -0.2371, -7.4392, 0.0294, 0.5852, -7.213, -1.8737, 0.5841, -7.4392, 0.0294, 0.5852, -6.0148, 0.0014, 0.6173, -7.213, -1.8737, 0.5841, -9.1423, -0.0584, -0.2371, -9.0066, -2.4095, -0.3378, -11.7812, -0.1896, -0.3837, -9.0066, -2.4095, -0.3378, -9.1423, -0.0584, -0.2371, -7.213, -1.8737, 0.5841, -11.7812, -0.1896, -0.3837, -13.687, -0.1814, -0.8867, -11.4726, 2.9968, -0.4288, -13.687, -0.1814, -0.8867, -13.2337, 3.5949, -0.8325, -11.4726, 2.9968, -0.4288, -9.0066, -2.4095, -0.3378, -11.5387, -3.1072, -0.4377, -11.7812, -0.1896, -0.3837, -11.7812, -0.1896, -0.3837, -11.5387, -3.1072, -0.4377, -13.687, -0.1814, -0.8867, -9.0066, -2.4095, -0.3378, -7.213, -1.8737, 0.5841, -8.0872, -4.6628, -0.3007, -9.0066, -2.4095, -0.3378, -8.0872, -4.6628, -0.3007, -11.5387, -3.1072, -0.4377, -6.0148, 0.0014, 0.6173, -5.8049, -1.5497, 0.6203, -7.213, -1.8737, 0.5841, -13.2337, 3.5949, -0.8325, -13.687, -0.1814, -0.8867, -15.6237, -0.1995, -1.0137, -11.5387, -3.1072, -0.4377, -13.3287, -3.5606, -0.9204, -13.687, -0.1814, -0.8867, -15.6237, -0.1995, -1.0137, -13.687, -0.1814, -0.8867, -13.3287, -3.5606, -0.9204, -11.897, -6.9723, -0.8839, -13.3287, -3.5606, -0.9204, -11.5387, -3.1072, -0.4377, -13.3287, -3.5606, -0.9204, -11.897, -6.9723, -0.8839, -13.649, -7.8863, -0.8582, -15.2381, -4.0538, -0.8568, -13.3287, -3.5606, -0.9204, -13.649, -7.8863, -0.8582, -15.2381, -4.0538, -0.8568, -15.6237, -0.1995, -1.0137, -13.3287, -3.5606, -0.9204, -15.7304, -4.1922, -0.5049, -15.2381, -4.0538, -0.8568, -13.649, -7.8863, -0.8582, -15.7304, -4.1922, -0.5049, -16.2644, -0.2258, -0.5536, -15.2381, -4.0538, -0.8568, -16.2644, -0.2258, -0.5536, -15.6237, -0.1995, -1.0137, -15.2381, -4.0538, -0.8568, -17.1051, -0.252, -0.4949, -16.2644, -0.2258, -0.5536, -15.7304, -4.1922, -0.5049, -15.2146, 4.0492, -0.8582, -13.2337, 3.5949, -0.8325, -15.6237, -0.1995, -1.0137, -15.2146, 4.0492, -0.8582, -15.6237, -0.1995, -1.0137, -16.2644, -0.2258, -0.5536, -17.1051, -0.252, -0.4949, -16.5132, 4.3967, -0.5068, -16.2644, -0.2258, -0.5536, -17.3078, 4.6302, -1.5822, -16.5132, 4.3967, -0.5068, -17.1051, -0.252, -0.4949, -14.8074, 8.5414, -0.5815, -16.5132, 4.3967, -0.5068, -17.3078, 4.6302, -1.5822, -16.5132, 4.3967, -0.5068, -15.7368, 4.1949, -0.501, -16.2644, -0.2258, -0.5536, -16.5132, 4.3967, -0.5068, -14.8074, 8.5414, -0.5815, -15.7368, 4.1949, -0.501, -15.7368, 4.1949, -0.501, -15.2146, 4.0492, -0.8582, -16.2644, -0.2258, -0.5536, -15.2146, 4.0492, -0.8582, -13.5911, 7.841, -0.8687, -13.2337, 3.5949, -0.8325, -13.5911, 7.841, -0.8687, -15.2146, 4.0492, -0.8582, -15.7368, 4.1949, -0.501, -13.5911, 7.841, -0.8687, -11.7939, 6.9424, -0.9312, -13.2337, 3.5949, -0.8325, -14.8074, 8.5414, -0.5815, -14.0952, 8.1324, -0.5439, -15.7368, 4.1949, -0.501, -14.0952, 8.1324, -0.5439, -13.5911, 7.841, -0.8687, -15.7368, 4.1949, -0.501, -14.8074, 8.5414, -0.5815, -12.0816, 12.0816, -0.6485, -14.0952, 8.1324, -0.5439, -13.5911, 7.841, -0.8687, -11.0853, 11.0889, -0.8322, -11.7939, 6.9424, -0.9312, -11.0853, 11.0889, -0.8322, -13.5911, 7.841, -0.8687, -14.0952, 8.1324, -0.5439, -12.0816, 12.0816, -0.6485, -11.5052, 11.5016, -0.4922, -14.0952, 8.1324, -0.5439, -11.5052, 11.5016, -0.4922, -11.0853, 11.0889, -0.8322, -14.0952, 8.1324, -0.5439, -8.1369, 14.0979, -0.5326, -11.5052, 11.5016, -0.4922, -12.0816, 12.0816, -0.6485, -11.5052, 11.5016, -0.4922, -8.1369, 14.0979, -0.5326, -11.0853, 11.0889, -0.8322, -11.0853, 11.0889, -0.8322, -9.6183, 9.6962, -0.8767, -11.7939, 6.9424, -0.9312, -8.1369, 14.0979, -0.5326, -7.8283, 13.5631, -0.8006, -11.0853, 11.0889, -0.8322, -11.0853, 11.0889, -0.8322, -7.8283, 13.5631, -0.8006, -9.6183, 9.6962, -0.8767, -4.0447, 15.1558, -0.8529, -7.8283, 13.5631, -0.8006, -8.1369, 14.0979, -0.5326, -7.8283, 13.5631, -0.8006, -6.7985, 11.783, -0.8618, -9.6183, 9.6962, -0.8767, -7.8283, 13.5631, -0.8006, -4.0447, 15.1558, -0.8529, -6.7985, 11.783, -0.8618, -9.6183, 9.6962, -0.8767, -6.7985, 11.783, -0.8618, -5.9687, 10.307, -0.4529, -4.0447, 15.1558, -0.8529, -3.4782, 13.2364, -0.8557, -6.7985, 11.783, -0.8618, -5.9687, 10.307, -0.4529, -6.7985, 11.783, -0.8618, -3.1072, 11.5378, -0.459, -6.7985, 11.783, -0.8618, -3.4782, 13.2364, -0.8557, -3.1072, 11.5378, -0.459, -5.9687, 10.307, -0.4529, -3.1072, 11.5378, -0.459, -2.4185, 8.9975, -0.3588, -3.1072, 11.5378, -0.459, -3.4782, 13.2364, -0.8557, -0.2982, 11.7477, -0.3879, -3.1072, 11.5378, -0.459, -0.2982, 11.7477, -0.3879, -2.4185, 8.9975, -0.3588, -3.813, -6.3804, 0.5672, -1.8909, -7.2392, 0.5871, -4.7026, -8.0673, -0.4056, -3.813, -6.3804, 0.5672, -4.7026, -8.0673, -0.4056, -6.6329, -6.5813, -0.4036, -1.8909, -7.2392, 0.5871, -3.813, -6.3804, 0.5672, -3.08, -5.1777, 0.6018, -4.7026, -8.0673, -0.4056, -5.9732, -10.1134, -0.41, -6.6329, -6.5813, -0.4036, -1.8909, -7.2392, 0.5871, -2.319, -9.1414, -0.3414, -4.7026, -8.0673, -0.4056, -4.7026, -8.0673, -0.4056, -2.319, -9.1414, -0.3414, -5.9732, -10.1134, -0.41, -2.319, -9.1414, -0.3414, -3.0484, -11.4771, -0.4208, -5.9732, -10.1134, -0.41, -2.319, -9.1414, -0.3414, -1.8909, -7.2392, 0.5871, -0.0086, -9.3813, -0.366, -0.2303, -11.8237, -0.3923, -3.0484, -11.4771, -0.4208, -2.319, -9.1414, -0.3414, -0.0086, -9.3813, -0.366, -0.2303, -11.8237, -0.3923, -2.319, -9.1414, -0.3414, -3.0484, -11.4771, -0.4208, -0.2303, -11.8237, -0.3923, -3.5714, -13.1938, -0.882, -3.0484, -11.4771, -0.4208, -3.5714, -13.1938, -0.882, -5.9732, -10.1134, -0.41, -0.2303, -11.8237, -0.3923, -0.081, -13.7712, -0.8419, -3.5714, -13.1938, -0.882, -3.5714, -13.1938, -0.882, -6.9867, -11.8817, -1.0967, -5.9732, -10.1134, -0.41, -0.2303, -11.8237, -0.3923, 3.0275, -11.4554, -0.4211, -0.081, -13.7712, -0.8419, 3.0275, -11.4554, -0.4211, -0.2303, -11.8237, -0.3923, -0.0086, -9.3813, -0.366, -5.9732, -10.1134, -0.41, -6.9867, -11.8817, -1.0967, -9.7351, -9.7794, -0.8753, -8.4265, -8.3948, -0.4449, -5.9732, -10.1134, -0.41, -9.7351, -9.7794, -0.8753, -5.9732, -10.1134, -0.41, -8.4265, -8.3948, -0.4449, -6.6329, -6.5813, -0.4036, -8.4265, -8.3948, -0.4449, -9.7351, -9.7794, -0.8753, -11.897, -6.9723, -0.8839, -10.2527, -6.0202, -0.4706, -8.4265, -8.3948, -0.4449, -11.897, -6.9723, -0.8839, -6.6329, -6.5813, -0.4036, -8.4265, -8.3948, -0.4449, -10.2527, -6.0202, -0.4706, -10.2527, -6.0202, -0.4706, -11.897, -6.9723, -0.8839, -11.5387, -3.1072, -0.4377, -8.0872, -4.6628, -0.3007, -10.2527, -6.0202, -0.4706, -11.5387, -3.1072, -0.4377, -8.0872, -4.6628, -0.3007, -6.6329, -6.5813, -0.4036, -10.2527, -6.0202, -0.4706, -6.6329, -6.5813, -0.4036, -8.0872, -4.6628, -0.3007, -5.299, -5.2908, 0.5608, -5.299, -5.2908, 0.5608, -3.813, -6.3804, 0.5672, -6.6329, -6.5813, -0.4036, -8.0872, -4.6628, -0.3007, -6.4329, -3.7669, 0.5893, -5.299, -5.2908, 0.5608, -7.213, -1.8737, 0.5841, -6.4329, -3.7669, 0.5893, -8.0872, -4.6628, -0.3007, -3.813, -6.3804, 0.5672, -5.299, -5.2908, 0.5608, -4.2737, -4.2529, 0.5727, -5.299, -5.2908, 0.5608, -6.4329, -3.7669, 0.5893, -4.2737, -4.2529, 0.5727, -7.213, -1.8737, 0.5841, -5.8049, -1.5497, 0.6203, -6.4329, -3.7669, 0.5893, -3.08, -5.1777, 0.6018, -3.813, -6.3804, 0.5672, -4.2737, -4.2529, 0.5727, -6.4329, -3.7669, 0.5893, -5.1922, -3.0203, 0.6184, -4.2737, -4.2529, 0.5727, -5.8049, -1.5497, 0.6203, -5.1922, -3.0203, 0.6184, -6.4329, -3.7669, 0.5893, -4.2737, -4.2529, 0.5727, -5.1922, -3.0203, 0.6184, -3.9533, -3.9017, 0.1879, -3.08, -5.1777, 0.6018, -4.2737, -4.2529, 0.5727, -3.9533, -3.9017, 0.1879, -5.1922, -3.0203, 0.6184, -5.8049, -1.5497, 0.6203, -4.8166, -2.7705, 0.2548, -5.1922, -3.0203, 0.6184, -4.8166, -2.7705, 0.2548, -3.9533, -3.9017, 0.1879, -5.8049, -1.5497, 0.6203, -5.365, -1.4366, 0.2319, -4.8166, -2.7705, 0.2548, -2.7289, -4.6456, 0.2487, -3.08, -5.1777, 0.6018, -3.9533, -3.9017, 0.1879, -5.5614, -0.0113, 0.2631, -5.365, -1.4366, 0.2319, -5.8049, -1.5497, 0.6203, -6.0148, 0.0014, 0.6173, -5.5614, -0.0113, 0.2631, -5.8049, -1.5497, 0.6203, -5.3343, 1.4258, 0.2557, -5.5614, -0.0113, 0.2631, -6.0148, 0.0014, 0.6173, -5.3343, 1.4258, 0.2557, -0.0005, 0.0005, 0.1751, -5.5614, -0.0113, 0.2631, -5.5614, -0.0113, 0.2631, -0.0005, 0.0005, 0.1751, -5.365, -1.4366, 0.2319, -5.365, -1.4366, 0.2319, -0.0005, 0.0005, 0.1751, -4.8166, -2.7705, 0.2548, -4.8166, -2.7705, 0.2548, -0.0005, 0.0005, 0.1751, -3.9533, -3.9017, 0.1879, -3.9533, -3.9017, 0.1879, -0.0005, 0.0005, 0.1751, -2.7289, -4.6456, 0.2487, -3.08, -5.1777, 0.6018, -2.7289, -4.6456, 0.2487, -1.4149, -5.3958, 0.1953, -2.7289, -4.6456, 0.2487, -0.0005, 0.0005, 0.1751, -1.4149, -5.3958, 0.1953, -1.4918, -5.8139, 0.6018, -3.08, -5.1777, 0.6018, -1.4149, -5.3958, 0.1953, -1.4918, -5.8139, 0.6018, -1.8909, -7.2392, 0.5871, -3.08, -5.1777, 0.6018, -1.4918, -5.8139, 0.6018, -1.4149, -5.3958, 0.1953, -0.005, -5.5732, 0.207, -1.4149, -5.3958, 0.1953, -0.0005, 0.0005, 0.1751, -0.005, -5.5732, 0.207, -1.8909, -7.2392, 0.5871, -1.4918, -5.8139, 0.6018, -0.0276, -7.4211, 0.6018, -0.0167, -5.9913, 0.6139, -1.4918, -5.8139, 0.6018, -0.005, -5.5732, 0.207, -1.4918, -5.8139, 0.6018, -0.0167, -5.9913, 0.6139, -0.0276, -7.4211, 0.6018, -1.8909, -7.2392, 0.5871, -0.0276, -7.4211, 0.6018, -0.0086, -9.3813, -0.366, -0.0167, -5.9913, 0.6139, -0.005, -5.5732, 0.207, 1.5461, -5.7931, 0.5791, -0.0276, -7.4211, 0.6018, -0.0167, -5.9913, 0.6139, 1.5461, -5.7931, 0.5791, -0.005, -5.5732, 0.207, -0.0005, 0.0005, 0.1751, 1.4375, -5.3777, 0.1909, -0.005, -5.5732, 0.207, 1.4375, -5.3777, 0.1909, 1.5461, -5.7931, 0.5791, -0.0086, -9.3813, -0.366, -0.0276, -7.4211, 0.6018, 2.3371, -9.0392, -0.3074, 2.3371, -9.0392, -0.3074, 3.0275, -11.4554, -0.4211, -0.0086, -9.3813, -0.366, 1.9353, -7.2383, 0.5724, -0.0276, -7.4211, 0.6018, 1.5461, -5.7931, 0.5791, -0.0276, -7.4211, 0.6018, 1.9353, -7.2383, 0.5724, 2.3371, -9.0392, -0.3074, 1.5461, -5.7931, 0.5791, 1.4375, -5.3777, 0.1909, 2.7741, -4.7976, 0.2573, 1.4375, -5.3777, 0.1909, -0.0005, 0.0005, 0.1751, 2.7741, -4.7976, 0.2573, 2.3371, -9.0392, -0.3074, 4.6755, -8.0953, -0.2946, 3.0275, -11.4554, -0.4211, 2.3371, -9.0392, -0.3074, 1.9353, -7.2383, 0.5724, 4.6755, -8.0953, -0.2946, 4.6755, -8.0953, -0.2946, 5.9107, -10.3016, -0.4343, 3.0275, -11.4554, -0.4211, 4.6755, -8.0953, -0.2946, 6.66, -6.679, -0.3262, 5.9107, -10.3016, -0.4343, 3.0303, -5.2049, 0.5877, 1.5461, -5.7931, 0.5791, 2.7741, -4.7976, 0.2573, 1.9353, -7.2383, 0.5724, 1.5461, -5.7931, 0.5791, 3.0303, -5.2049, 0.5877, 1.9353, -7.2383, 0.5724, 3.7741, -6.4935, 0.5766, 4.6755, -8.0953, -0.2946, 4.6755, -8.0953, -0.2946, 3.7741, -6.4935, 0.5766, 6.66, -6.679, -0.3262, 3.7741, -6.4935, 0.5766, 1.9353, -7.2383, 0.5724, 3.0303, -5.2049, 0.5877, 3.7741, -6.4935, 0.5766, 5.3053, -5.2311, 0.6095, 6.66, -6.679, -0.3262, 3.7741, -6.4935, 0.5766, 3.0303, -5.2049, 0.5877, 5.3053, -5.2311, 0.6095, 3.0303, -5.2049, 0.5877, 2.7741, -4.7976, 0.2573, 3.9262, -3.9379, 0.218, 2.7741, -4.7976, 0.2573, -0.0005, 0.0005, 0.1751, 3.9262, -3.9379, 0.218, 4.2891, -4.2194, 0.6175, 3.0303, -5.2049, 0.5877, 3.9262, -3.9379, 0.218, 3.0303, -5.2049, 0.5877, 4.2891, -4.2194, 0.6175, 5.3053, -5.2311, 0.6095, 4.2891, -4.2194, 0.6175, 3.9262, -3.9379, 0.218, 4.927, -2.5805, 0.2529, 3.9262, -3.9379, 0.218, -0.0005, 0.0005, 0.1751, 4.927, -2.5805, 0.2529, 5.3053, -5.2311, 0.6095, 4.2891, -4.2194, 0.6175, 5.3596, -2.8312, 0.5846, 5.3596, -2.8312, 0.5846, 4.2891, -4.2194, 0.6175, 4.927, -2.5805, 0.2529, 6.66, -6.679, -0.3262, 5.3053, -5.2311, 0.6095, 8.3415, -4.4166, -0.4139, 8.3415, -4.4166, -0.4139, 10.2681, -5.8365, -0.4545, 6.66, -6.679, -0.3262, 5.3053, -5.2311, 0.6095, 6.5831, -3.499, 0.6065, 8.3415, -4.4166, -0.4139, 6.5831, -3.499, 0.6065, 5.3053, -5.2311, 0.6095, 5.3596, -2.8312, 0.5846, 11.5124, -2.9787, -0.4305, 10.2681, -5.8365, -0.4545, 8.3415, -4.4166, -0.4139, 11.5124, -2.9787, -0.4305, 12.9966, -3.4692, -0.846, 10.2681, -5.8365, -0.4545, 8.3415, -4.4166, -0.4139, 6.5831, -3.499, 0.6065, 9.0356, -2.509, -0.3461, 9.0356, -2.509, -0.3461, 11.5124, -2.9787, -0.4305, 8.3415, -4.4166, -0.4139, 13.4038, -0.148, -0.8305, 12.9966, -3.4692, -0.846, 11.5124, -2.9787, -0.4305, 11.7758, -0.1588, -0.397, 13.4038, -0.148, -0.8305, 11.5124, -2.9787, -0.4305, 11.7758, -0.1588, -0.397, 11.3966, 3.0764, -0.4122, 13.4038, -0.148, -0.8305, 9.3505, -0.1172, -0.3511, 11.7758, -0.1588, -0.397, 11.5124, -2.9787, -0.4305, 11.3966, 3.0764, -0.4122, 11.7758, -0.1588, -0.397, 9.3505, -0.1172, -0.3511, 9.0356, -2.509, -0.3461, 9.3505, -0.1172, -0.3511, 11.5124, -2.9787, -0.4305, 6.5831, -3.499, 0.6065, 7.1677, -1.9896, 0.5937, 9.0356, -2.509, -0.3461, 9.0356, -2.509, -0.3461, 7.1677, -1.9896, 0.5937, 9.3505, -0.1172, -0.3511, 6.5831, -3.499, 0.6065, 5.3596, -2.8312, 0.5846, 7.1677, -1.9896, 0.5937, 8.9722, 2.4013, -0.3998, 11.3966, 3.0764, -0.4122, 9.3505, -0.1172, -0.3511, 8.9722, 2.4013, -0.3998, 8.0654, 4.6899, -0.3466, 11.3966, 3.0764, -0.4122, 7.1677, -1.9896, 0.5937, 7.3342, 0.0131, 0.6067, 9.3505, -0.1172, -0.3511, 9.3505, -0.1172, -0.3511, 7.3342, 0.0131, 0.6067, 8.9722, 2.4013, -0.3998, 5.3596, -2.8312, 0.5846, 5.8682, -1.5289, 0.6034, 7.1677, -1.9896, 0.5937, 7.1677, -1.9896, 0.5937, 5.8682, -1.5289, 0.6034, 7.3342, 0.0131, 0.6067, 5.8682, -1.5289, 0.6034, 5.3596, -2.8312, 0.5846, 5.3596, -1.4212, 0.2415, 5.3596, -2.8312, 0.5846, 4.927, -2.5805, 0.2529, 5.3596, -1.4212, 0.2415, 5.8682, -1.5289, 0.6034, 5.9904, -0.0014, 0.6128, 7.3342, 0.0131, 0.6067, 4.927, -2.5805, 0.2529, -0.0005, 0.0005, 0.1751, 5.3596, -1.4212, 0.2415, 5.8682, -1.5289, 0.6034, 5.3596, -1.4212, 0.2415, 5.556, -0.005, 0.2584, 5.9904, -0.0014, 0.6128, 5.8682, -1.5289, 0.6034, 5.556, -0.005, 0.2584, 5.3596, -1.4212, 0.2415, -0.0005, 0.0005, 0.1751, 5.556, -0.005, 0.2584, 7.3342, 0.0131, 0.6067, 5.9904, -0.0014, 0.6128, 5.7614, 1.5615, 0.5741, 5.9904, -0.0014, 0.6128, 5.556, -0.005, 0.2584, 5.7614, 1.5615, 0.5741, 7.3342, 0.0131, 0.6067, 7.1062, 1.9153, 0.5744, 8.9722, 2.4013, -0.3998, 7.1062, 1.9153, 0.5744, 7.3342, 0.0131, 0.6067, 5.7614, 1.5615, 0.5741, 8.9722, 2.4013, -0.3998, 7.1062, 1.9153, 0.5744, 6.4528, 3.5859, 0.5603, 8.0654, 4.6899, -0.3466, 8.9722, 2.4013, -0.3998, 6.4528, 3.5859, 0.5603, 7.1062, 1.9153, 0.5744, 5.7614, 1.5615, 0.5741, 6.4528, 3.5859, 0.5603, 8.0654, 4.6899, -0.3466, 6.4528, 3.5859, 0.5603, 5.2845, 5.2112, 0.5694, 5.556, -0.005, 0.2584, 5.3216, 1.423, 0.2548, 5.7614, 1.5615, 0.5741, 5.556, -0.005, 0.2584, -0.0005, 0.0005, 0.1751, 5.3216, 1.423, 0.2548, 5.7614, 1.5615, 0.5741, 5.1759, 2.9877, 0.6015, 6.4528, 3.5859, 0.5603, 6.4528, 3.5859, 0.5603, 5.1759, 2.9877, 0.6015, 5.2845, 5.2112, 0.5694, 5.7614, 1.5615, 0.5741, 5.3216, 1.423, 0.2548, 4.7841, 2.7741, 0.2532, 5.3216, 1.423, 0.2548, -0.0005, 0.0005, 0.1751, 4.7841, 2.7741, 0.2532, 5.1759, 2.9877, 0.6015, 5.7614, 1.5615, 0.5741, 4.7841, 2.7741, 0.2532, 4.7841, 2.7741, 0.2532, -0.0005, 0.0005, 0.1751, 3.9262, 3.9063, 0.259, 5.1759, 2.9877, 0.6015, 4.7841, 2.7741, 0.2532, 3.9262, 3.9063, 0.259, 3.9262, 3.9063, 0.259, -0.0005, 0.0005, 0.1751, 2.5877, 4.8963, 0.2487, 5.1759, 2.9877, 0.6015, 4.2185, 4.2646, 0.5633, 5.2845, 5.2112, 0.5694, 4.2185, 4.2646, 0.5633, 5.1759, 2.9877, 0.6015, 3.9262, 3.9063, 0.259, 5.2845, 5.2112, 0.5694, 4.2185, 4.2646, 0.5633, 2.8818, 5.2791, 0.5442, 4.2185, 4.2646, 0.5633, 3.9262, 3.9063, 0.259, 2.8818, 5.2791, 0.5442, 3.9262, 3.9063, 0.259, 2.5877, 4.8963, 0.2487, 2.8818, 5.2791, 0.5442, 3.4845, 6.5795, 0.586, 5.2845, 5.2112, 0.5694, 2.8818, 5.2791, 0.5442, 2.8818, 5.2791, 0.5442, 2.5877, 4.8963, 0.2487, 1.5181, 5.8284, 0.5899, 3.4845, 6.5795, 0.586, 2.8818, 5.2791, 0.5442, 1.5181, 5.8284, 0.5899, -26.1393, 2.4737, 0.3373, -26.1393, 2.4737, -3.2004, -21.0932, 2.4737, 0.3373, -26.1393, 2.4737, -3.2004, -21.0932, 2.4737, -3.2004, -21.0932, 2.4737, 0.3373, -26.1393, -2.5723, -3.2004, -26.1393, 2.4737, -3.2004, -26.1393, 2.4737, 0.3373, -26.1393, -2.5723, 0.3373, -26.1393, -2.5723, -3.2004, -26.1393, 2.4737, 0.3373, -26.1393, 2.4737, 0.3373, -21.0932, 2.4737, 0.3373, -21.5167, 2.0502, 0.3373, -25.7158, 2.0502, 0.3373, -26.1393, 2.4737, 0.3373, -21.5167, 2.0502, 0.3373, -26.1393, -2.5723, 0.3373, -26.1393, 2.4737, 0.3373, -25.7158, 2.0502, 0.3373, -21.5167, 2.0502, 0.3373, -21.0932, 2.4737, 0.3373, -21.5167, -2.1488, 0.3373, -25.7158, -2.1488, 0.3373, -26.1393, -2.5723, 0.3373, -25.7158, 2.0502, 0.3373, -21.0932, 2.4737, 0.3373, -21.0932, -2.5723, 0.3373, -21.5167, -2.1488, 0.3373, -21.5167, -2.1488, 0.3373, -21.0932, -2.5723, 0.3373, -25.7158, -2.1488, 0.3373, -21.0932, -2.5723, 0.3373, -26.1393, -2.5723, 0.3373, -25.7158, -2.1488, 0.3373, -21.0932, 2.4737, 0.3373, -21.0932, 2.4737, -3.2004, -21.0932, -2.5723, 0.3373, -21.0932, 2.4737, -3.2004, -21.0932, -2.5723, -3.2004, -21.0932, -2.5723, 0.3373, -21.0932, -2.5723, 0.3373, -21.0932, -2.5723, -3.2004, -26.1393, -2.5723, 0.3373, -21.0932, -2.5723, -3.2004, -26.1393, -2.5723, -3.2004, -26.1393, -2.5723, 0.3373, -21.5167, 2.0502, 0.3373, -22.2308, 1.3362, 10.6319, -25.7158, 2.0502, 0.3373, -22.2308, 1.3362, 10.6319, -25.0017, 1.3362, 10.6319, -25.7158, 2.0502, 0.3373, -25.7158, 2.0502, 0.3373, -25.0017, 1.3362, 10.6319, -25.7158, -2.1488, 0.3373, -22.2308, 1.3362, 10.6319, -23.2733, 0.2937, 11.0959, -25.0017, 1.3362, 10.6319, -25.0017, 1.3362, 10.6319, -25.0017, -1.4348, 10.6319, -25.7158, -2.1488, 0.3373, -23.2733, 0.2937, 11.0959, -23.9592, 0.2937, 11.0959, -25.0017, 1.3362, 10.6319, -25.0017, 1.3362, 10.6319, -23.9592, 0.2937, 11.0959, -25.0017, -1.4348, 10.6319, -23.2733, 0.2937, 11.0959, -23.2733, -0.3923, 11.0959, -23.9592, 0.2937, 11.0959, -23.2733, -0.3923, 11.0959, -23.2733, 0.2937, 11.0959, -22.2308, 1.3362, 10.6319, -23.9592, 0.2937, 11.0959, -23.9592, -0.3923, 11.0959, -25.0017, -1.4348, 10.6319, -23.2733, -0.3923, 11.0959, -23.9592, -0.3923, 11.0959, -23.9592, 0.2937, 11.0959, -21.5167, -2.1488, 0.3373, -25.7158, -2.1488, 0.3373, -25.0017, -1.4348, 10.6319, -22.2308, -1.4348, 10.6319, -23.2733, -0.3923, 11.0959, -22.2308, 1.3362, 10.6319, -22.2308, -1.4348, 10.6319, -21.5167, -2.1488, 0.3373, -25.0017, -1.4348, 10.6319, -23.9592, -0.3923, 11.0959, -23.2733, -0.3923, 11.0959, -22.2308, -1.4348, 10.6319, -25.0017, -1.4348, 10.6319, -23.9592, -0.3923, 11.0959, -22.2308, -1.4348, 10.6319, -22.2308, -1.4348, 10.6319, -22.2308, 1.3362, 10.6319, -21.5167, 2.0502, 0.3373, -21.5167, -2.1488, 0.3373, -22.2308, -1.4348, 10.6319, -21.5167, 2.0502, 0.3373, 4.0456, 23.1122, -2.2255, 2.9506, 17.4589, -2.1887, 4.0411, 23.0986, -4.7821, 2.9506, 17.4589, -2.1887, 2.9461, 17.4453, -4.7453, 4.0411, 23.0986, -4.7821, 9.984, 20.9213, -2.472, 4.0456, 23.1122, -2.2255, 4.0411, 23.0986, -4.7821, 4.0456, 23.1122, -2.2255, 9.984, 20.9213, -2.472, 2.9506, 17.4589, -2.1887, 9.984, 20.9213, -2.472, 7.8591, 15.8671, -2.1887, 2.9506, 17.4589, -2.1887, 10.0645, 20.972, -4.776, 9.984, 20.9213, -2.472, 4.0411, 23.0986, -4.7821, 9.984, 20.9213, -2.472, 10.0645, 20.972, -4.776, 7.8546, 15.8526, -4.7453, 7.8591, 15.8671, -2.1887, 9.984, 20.9213, -2.472, 7.8546, 15.8526, -4.7453, 18.191, 0.0973, -1.0294, 18.6734, -5.0845, -1.0294, 18.191, 0.0973, -4.7636, 18.6734, -5.0845, -1.0294, 18.6734, -5.0845, -4.7636, 18.191, 0.0973, -4.7636, 18.191, 0.0973, -1.0294, 18.191, 0.0973, -4.7636, 18.6734, 5.2782, -4.7636, 18.6734, 5.2782, -1.0294, 18.191, 0.0973, -1.0294, 18.6734, 5.2782, -4.7636, 18.6734, 5.2782, -1.0294, 18.6734, 5.2782, -4.7636, 22.3936, 6.7469, -4.7636, 22.3936, 6.7469, -1.0294, 18.6734, 5.2782, -1.0294, 22.3936, 6.7469, -4.7636, 22.3936, 6.7469, -1.0294, 22.3936, 6.7469, -4.7636, 27.5112, 5.7288, -4.7636, 27.5112, 5.7288, -1.0294, 22.3936, 6.7469, -1.0294, 27.5112, 5.7288, -4.7636, 27.5112, 5.7288, -1.0294, 27.5112, 5.7288, -4.7636, 29.6532, 0.0973, -4.7636, 29.6532, 0.0973, -1.0294, 27.5112, 5.7288, -1.0294, 29.6532, 0.0973, -4.7636, 29.6532, 0.0973, -1.0294, 29.6532, 0.0973, -4.7636, 27.5094, -5.5325, -4.7636, 27.5094, -5.5325, -1.0294, 29.6532, 0.0973, -1.0294, 27.5094, -5.5325, -4.7636, 27.5094, -5.5325, -1.0294, 27.5094, -5.5325, -4.7636, 22.3756, -6.6501, -4.7636, 22.3756, -6.6501, -1.0294, 27.5094, -5.5325, -1.0294, 22.3756, -6.6501, -4.7636, 22.3756, -6.6501, -1.0294, 22.3756, -6.6501, -4.7636, 18.6734, -5.0845, -4.7636, 18.6734, -5.0845, -1.0294, 22.3756, -6.6501, -1.0294, 18.6734, -5.0845, -4.7636, 29.6532, 0.0973, -1.0294, 27.5094, -5.5325, -1.0294, 18.6734, -5.0845, -1.0294, 27.5094, -5.5325, -1.0294, 22.3756, -6.6501, -1.0294, 18.6734, -5.0845, -1.0294, 29.6532, 0.0973, -1.0294, 18.6734, -5.0845, -1.0294, 18.191, 0.0973, -1.0294, 18.6734, 5.2782, -1.0294, 29.6532, 0.0973, -1.0294, 18.191, 0.0973, -1.0294, 27.5112, 5.7288, -1.0294, 29.6532, 0.0973, -1.0294, 18.6734, 5.2782, -1.0294, 22.3936, 6.7469, -1.0294, 27.5112, 5.7288, -1.0294, 18.6734, 5.2782, -1.0294, 8.2012, 15.6924, -2.1887, 9.898, 19.1349, -2.3566, 12.3776, 12.6617, -2.1887, 9.898, 19.1349, -2.3566, 15.1721, 15.4282, -2.3469, 12.3776, 12.6617, -2.1887, 12.3776, 12.6617, -2.1887, 15.1721, 15.4282, -2.3469, 12.3694, 12.6491, -4.7453, 15.1721, 15.4282, -2.3469, 15.1938, 15.4635, -4.76, 12.3694, 12.6491, -4.7453, 15.1721, 15.4282, -2.3469, 9.898, 19.1349, -2.3566, 15.1938, 15.4635, -4.76, 9.898, 19.1349, -2.3566, 9.9713, 19.2408, -4.7699, 15.1938, 15.4635, -4.76, 9.9713, 19.2408, -4.7699, 9.898, 19.1349, -2.3566, 8.1921, 15.6807, -4.7453, 9.898, 19.1349, -2.3566, 8.2012, 15.6924, -2.1887, 8.1921, 15.6807, -4.7453, -3.2945, 22.4063, -2.2252, 3.271, 22.409, -2.2252, -2.5895, 17.5168, -2.1887, 3.271, 22.409, -2.2252, 2.5714, 17.5186, -2.1887, -2.5895, 17.5168, -2.1887, -3.2945, 22.4063, -2.2252, -2.5895, 17.5168, -2.1887, -2.5895, 17.5014, -4.7453, -3.2945, 22.3909, -4.7818, -3.2945, 22.4063, -2.2252, -2.5895, 17.5014, -4.7453, -3.2945, 22.4063, -2.2252, -3.2945, 22.3909, -4.7818, 3.271, 22.3946, -4.7818, 3.271, 22.409, -2.2252, -3.2945, 22.4063, -2.2252, 3.271, 22.3946, -4.7818, 3.271, 22.409, -2.2252, 3.271, 22.3946, -4.7818, 2.5714, 17.5042, -4.7453, 2.5714, 17.5186, -2.1887, 3.271, 22.409, -2.2252, 2.5714, 17.5042, -4.7453, -10.2247, 20.8054, -2.2255, -3.9814, 22.8371, -2.2255, -7.8754, 15.8589, -2.1887, -3.9814, 22.8371, -2.2255, -2.9687, 17.4562, -2.1887, -7.8754, 15.8589, -2.1887, -10.2247, 20.8054, -2.2255, -7.8754, 15.8589, -2.1887, -7.8709, 15.8454, -4.7453, -10.2201, 20.791, -4.7818, -10.2247, 20.8054, -2.2255, -7.8709, 15.8454, -4.7453, -10.2247, 20.8054, -2.2255, -10.2201, 20.791, -4.7818, -3.9768, 22.8235, -4.7818, -3.9814, 22.8371, -2.2255, -10.2247, 20.8054, -2.2255, -3.9768, 22.8235, -4.7818, -3.9814, 22.8371, -2.2255, -3.9768, 22.8235, -4.7818, -2.9642, 17.4417, -4.7453, -2.9687, 17.4562, -2.1887, -3.9814, 22.8371, -2.2255, -2.9642, 17.4417, -4.7453, -12.3911, 12.6491, -2.1887, -15.1549, 15.4164, -2.3826, -8.2175, 15.6843, -2.1887, -15.1549, 15.4164, -2.3826, -9.9342, 19.2145, -2.3688, -8.2175, 15.6843, -2.1887, -8.2175, 15.6843, -2.1887, -9.9342, 19.2145, -2.3688, -8.2084, 15.6725, -4.7453, -9.9342, 19.2145, -2.3688, -9.9686, 19.2471, -4.7608, -8.2084, 15.6725, -4.7453, -9.9342, 19.2145, -2.3688, -15.1549, 15.4164, -2.3826, -9.9686, 19.2471, -4.7608, -15.1549, 15.4164, -2.3826, -15.1793, 15.4454, -4.7749, -9.9686, 19.2471, -4.7608, -15.1793, 15.4454, -4.7749, -15.1549, 15.4164, -2.3826, -12.3821, 12.6373, -4.7453, -15.1549, 15.4164, -2.3826, -12.3911, 12.6491, -2.1887, -12.3821, 12.6373, -4.7453, 6.6492, 22.3756, -1.0294, 5.5316, 27.5094, -1.0294, 6.6492, 22.3756, -4.7636, 6.6492, 22.3756, -1.0294, 6.6492, 22.3756, -4.7636, 5.0836, 18.6734, -4.7636, 5.0836, 18.6734, -1.0294, 6.6492, 22.3756, -1.0294, 5.0836, 18.6734, -4.7636, 5.5316, 27.5094, -1.0294, 5.5316, 27.5094, -4.7636, 6.6492, 22.3756, -4.7636, 5.5316, 27.5094, -1.0294, -0.0982, 29.6532, -1.0294, 5.5316, 27.5094, -4.7636, -0.0982, 29.6532, -1.0294, -0.0982, 29.6532, -4.7636, 5.5316, 27.5094, -4.7636, 5.5316, 27.5094, -1.0294, 6.6492, 22.3756, -1.0294, 5.0836, 18.6734, -1.0294, -0.0982, 29.6532, -1.0294, 5.5316, 27.5094, -1.0294, 5.0836, 18.6734, -1.0294, -0.0982, 29.6532, -1.0294, 5.0836, 18.6734, -1.0294, -0.0982, 18.191, -1.0294, -5.2791, 18.6734, -1.0294, -0.0982, 29.6532, -1.0294, -0.0982, 18.191, -1.0294, -5.7297, 27.5112, -1.0294, -0.0982, 29.6532, -1.0294, -5.2791, 18.6734, -1.0294, -6.7478, 22.3936, -1.0294, -5.7297, 27.5112, -1.0294, -5.2791, 18.6734, -1.0294, -0.0982, 29.6532, -1.0294, -5.7297, 27.5112, -1.0294, -0.0982, 29.6532, -4.7636, -5.7297, 27.5112, -1.0294, -5.7297, 27.5112, -4.7636, -0.0982, 29.6532, -4.7636, -5.7297, 27.5112, -1.0294, -6.7478, 22.3936, -1.0294, -5.7297, 27.5112, -4.7636, -6.7478, 22.3936, -1.0294, -6.7478, 22.3936, -4.7636, -5.7297, 27.5112, -4.7636, -6.7478, 22.3936, -1.0294, -5.2791, 18.6734, -1.0294, -6.7478, 22.3936, -4.7636, -5.2791, 18.6734, -1.0294, -5.2791, 18.6734, -4.7636, -6.7478, 22.3936, -4.7636, -5.2791, 18.6734, -1.0294, -0.0982, 18.191, -1.0294, -5.2791, 18.6734, -4.7636, -0.0982, 18.191, -1.0294, -0.0982, 18.191, -4.7636, -5.2791, 18.6734, -4.7636, -0.0982, 18.191, -1.0294, 5.0836, 18.6734, -1.0294, -0.0982, 18.191, -4.7636, 5.0836, 18.6734, -1.0294, 5.0836, 18.6734, -4.7636, -0.0982, 18.191, -4.7636, -18.1919, -0.0982, -1.0294, -18.6743, 5.0836, -1.0294, -18.1919, -0.0982, -4.7636, -18.6743, 5.0836, -1.0294, -18.6743, 5.0836, -4.7636, -18.1919, -0.0982, -4.7636, -18.1919, -0.0982, -1.0294, -18.1919, -0.0982, -4.7636, -18.6743, -5.2791, -4.7636, -18.6743, -5.2791, -1.0294, -18.1919, -0.0982, -1.0294, -18.6743, -5.2791, -4.7636, -18.6743, -5.2791, -1.0294, -18.6743, -5.2791, -4.7636, -22.3946, -6.7478, -4.7636, -22.3946, -6.7478, -1.0294, -18.6743, -5.2791, -1.0294, -22.3946, -6.7478, -4.7636, -22.3946, -6.7478, -1.0294, -22.3946, -6.7478, -4.7636, -27.5121, -5.7297, -4.7636, -27.5121, -5.7297, -1.0294, -22.3946, -6.7478, -1.0294, -27.5121, -5.7297, -4.7636, -27.5121, -5.7297, -1.0294, -27.5121, -5.7297, -4.7636, -29.6532, -0.0982, -4.7636, -29.6532, -0.0982, -1.0294, -27.5121, -5.7297, -1.0294, -29.6532, -0.0982, -4.7636, -29.6532, -0.0982, -1.0294, -29.6532, -0.0982, -4.7636, -27.5103, 5.5316, -4.7636, -27.5103, 5.5316, -1.0294, -29.6532, -0.0982, -1.0294, -27.5103, 5.5316, -4.7636, -27.5103, 5.5316, -1.0294, -27.5103, 5.5316, -4.7636, -22.3765, 6.6492, -4.7636, -22.3765, 6.6492, -1.0294, -27.5103, 5.5316, -1.0294, -22.3765, 6.6492, -4.7636, -22.3765, 6.6492, -1.0294, -22.3765, 6.6492, -4.7636, -18.6743, 5.0836, -4.7636, -18.6743, 5.0836, -1.0294, -22.3765, 6.6492, -1.0294, -18.6743, 5.0836, -4.7636, -29.6532, -0.0982, -1.0294, -27.5103, 5.5316, -1.0294, -18.6743, 5.0836, -1.0294, -27.5103, 5.5316, -1.0294, -22.3765, 6.6492, -1.0294, -18.6743, 5.0836, -1.0294, -29.6532, -0.0982, -1.0294, -18.6743, 5.0836, -1.0294, -18.1919, -0.0982, -1.0294, -18.6743, -5.2791, -1.0294, -29.6532, -0.0982, -1.0294, -18.1919, -0.0982, -1.0294, -27.5121, -5.7297, -1.0294, -29.6532, -0.0982, -1.0294, -18.6743, -5.2791, -1.0294, -22.3946, -6.7478, -1.0294, -27.5121, -5.7297, -1.0294, -18.6743, -5.2791, -1.0294, 0.0973, -29.6532, -1.0294, -5.5325, -27.5103, -1.0294, -5.0845, -18.6743, -1.0294, -5.5325, -27.5103, -1.0294, -6.6501, -22.3765, -1.0294, -5.0845, -18.6743, -1.0294, 0.0973, -29.6532, -1.0294, -5.0845, -18.6743, -1.0294, 0.0973, -18.1919, -1.0294, 5.2782, -18.6743, -1.0294, 0.0973, -29.6532, -1.0294, 0.0973, -18.1919, -1.0294, 5.7288, -27.5121, -1.0294, 0.0973, -29.6532, -1.0294, 5.2782, -18.6743, -1.0294, 6.7469, -22.3946, -1.0294, 5.7288, -27.5121, -1.0294, 5.2782, -18.6743, -1.0294, -5.5325, -27.5103, -1.0294, 0.0973, -29.6532, -1.0294, -5.5325, -27.5103, -4.7636, 0.0973, -29.6532, -1.0294, 0.0973, -29.6532, -4.7636, -5.5325, -27.5103, -4.7636, -5.5325, -27.5103, -1.0294, -5.5325, -27.5103, -4.7636, -6.6501, -22.3765, -4.7636, 0.0973, -29.6532, -1.0294, 5.7288, -27.5121, -1.0294, 0.0973, -29.6532, -4.7636, -6.6501, -22.3765, -1.0294, -5.5325, -27.5103, -1.0294, -6.6501, -22.3765, -4.7636, -6.6501, -22.3765, -1.0294, -6.6501, -22.3765, -4.7636, -5.0845, -18.6743, -4.7636, -5.0845, -18.6743, -1.0294, -6.6501, -22.3765, -1.0294, -5.0845, -18.6743, -4.7636, 5.7288, -27.5121, -1.0294, 5.7288, -27.5121, -4.7636, 0.0973, -29.6532, -4.7636, 5.7288, -27.5121, -1.0294, 6.7469, -22.3946, -1.0294, 5.7288, -27.5121, -4.7636, 6.7469, -22.3946, -1.0294, 6.7469, -22.3946, -4.7636, 5.7288, -27.5121, -4.7636, 6.7469, -22.3946, -1.0294, 5.2782, -18.6743, -1.0294, 6.7469, -22.3946, -4.7636, 5.2782, -18.6743, -1.0294, 5.2782, -18.6743, -4.7636, 6.7469, -22.3946, -4.7636, 5.2782, -18.6743, -1.0294, 0.0973, -18.1919, -1.0294, 5.2782, -18.6743, -4.7636, 0.0973, -18.1919, -1.0294, 0.0973, -18.1919, -4.7636, 5.2782, -18.6743, -4.7636, 0.0973, -18.1919, -1.0294, -5.0845, -18.6743, -1.0294, 0.0973, -18.1919, -4.7636, -5.0845, -18.6743, -1.0294, -5.0845, -18.6743, -4.7636, 0.0973, -18.1919, -4.7636, 20.6652, -10.9432, -2.2255, 16.8082, -16.2562, -2.2255, 15.6924, -8.2021, -2.1887, 16.8082, -16.2562, -2.2255, 12.6617, -12.3785, -2.1887, 15.6924, -8.2021, -2.1887, 20.6652, -10.9432, -2.2255, 15.6924, -8.2021, -2.1887, 15.6807, -8.193, -4.7453, 20.6534, -10.9342, -4.7821, 20.6652, -10.9432, -2.2255, 15.6807, -8.193, -4.7453, 20.6652, -10.9432, -2.2255, 20.6534, -10.9342, -4.7821, 16.7965, -16.2481, -4.7821, 16.8082, -16.2562, -2.2255, 20.6652, -10.9432, -2.2255, 16.7965, -16.2481, -4.7821, 16.8082, -16.2562, -2.2255, 16.7965, -16.2481, -4.7821, 12.6491, -12.3703, -4.7453, 12.6617, -12.3785, -2.1887, 16.8082, -16.2562, -2.2255, 12.6491, -12.3703, -4.7453, -9.7713, -19.4833, -2.2249, -3.5262, -21.5095, -2.2249, -9.7668, -19.4697, -4.7815, -3.5262, -21.5095, -2.2249, -3.5216, -21.4959, -4.7815, -9.7668, -19.4697, -4.7815, -9.7713, -19.4833, -2.2249, -9.7668, -19.4697, -4.7815, -7.8555, -15.8535, -4.7453, -7.86, -15.868, -2.1887, -9.7713, -19.4833, -2.2249, -7.8555, -15.8535, -4.7453, -3.5216, -21.4959, -4.7815, -3.5262, -21.5095, -2.2249, -2.947, -17.4462, -4.7453, -3.5262, -21.5095, -2.2249, -2.9515, -17.4598, -2.1887, -2.947, -17.4462, -4.7453, -3.5262, -21.5095, -2.2249, -9.7713, -19.4833, -2.2249, -2.9515, -17.4598, -2.1887, -9.7713, -19.4833, -2.2249, -7.86, -15.868, -2.1887, -2.9515, -17.4598, -2.1887, 3.2936, -21.952, -2.2249, -3.2728, -21.9556, -2.2249, 2.5886, -17.5168, -2.1887, -3.2728, -21.9556, -2.2249, -2.5723, -17.5195, -2.1887, 2.5886, -17.5168, -2.1887, 3.2936, -21.952, -2.2249, 2.5886, -17.5168, -2.1887, 2.5886, -17.5023, -4.7453, 3.2936, -21.9375, -4.7815, 3.2936, -21.952, -2.2249, 2.5886, -17.5023, -4.7453, 3.2936, -21.952, -2.2249, 3.2936, -21.9375, -4.7815, -3.2728, -21.9403, -4.7815, -3.2728, -21.9556, -2.2249, 3.2936, -21.952, -2.2249, -3.2728, -21.9403, -4.7815, -3.2728, -21.9556, -2.2249, -3.2728, -21.9403, -4.7815, -2.5723, -17.5051, -4.7453, -2.5723, -17.5195, -2.1887, -3.2728, -21.9556, -2.2249, -2.5723, -17.5051, -4.7453, 10.1297, -20.5177, -2.2252, 3.8863, -22.5493, -2.2252, 7.8745, -15.8598, -2.1887, 3.8863, -22.5493, -2.2252, 2.9678, -17.4571, -2.1887, 7.8745, -15.8598, -2.1887, 10.1297, -20.5177, -2.2252, 7.8745, -15.8598, -2.1887, 7.87, -15.8463, -4.7453, 10.1251, -20.5032, -4.7818, 10.1297, -20.5177, -2.2252, 7.87, -15.8463, -4.7453, 10.1297, -20.5177, -2.2252, 10.1251, -20.5032, -4.7818, 3.8818, -22.5357, -4.7818, 3.8863, -22.5493, -2.2252, 10.1297, -20.5177, -2.2252, 3.8818, -22.5357, -4.7818, 3.8863, -22.5493, -2.2252, 3.8818, -22.5357, -4.7818, 2.9633, -17.4426, -4.7453, 2.9678, -17.4571, -2.1887, 3.8863, -22.5493, -2.2252, 2.9633, -17.4426, -4.7453, 15.7875, -16.1268, -2.2252, 10.4772, -19.9883, -2.2252, 12.3902, -12.65, -2.1887, 10.4772, -19.9883, -2.2252, 8.2166, -15.6852, -2.1887, 12.3902, -12.65, -2.1887, 15.7875, -16.1268, -2.2252, 12.3902, -12.65, -2.1887, 12.3812, -12.6382, -4.7453, 15.7784, -16.115, -4.7818, 15.7875, -16.1268, -2.2252, 12.3812, -12.6382, -4.7453, 15.7875, -16.1268, -2.2252, 15.7784, -16.115, -4.7818, 10.469, -19.9765, -4.7818, 10.4772, -19.9883, -2.2252, 15.7875, -16.1268, -2.2252, 10.469, -19.9765, -4.7818, 10.4772, -19.9883, -2.2252, 10.469, -19.9765, -4.7818, 8.2075, -15.6734, -4.7453, 8.2166, -15.6852, -2.1887, 10.4772, -19.9883, -2.2252, 8.2075, -15.6734, -4.7453, 21.895, -3.6511, -2.2249, 19.8688, -9.8971, -2.2249, 17.4589, -2.9515, -2.1887, 19.8688, -9.8971, -2.2249, 15.8671, -7.86, -2.1887, 17.4589, -2.9515, -2.1887, 21.895, -3.6511, -2.2249, 17.4589, -2.9515, -2.1887, 17.4453, -2.947, -4.7453, 21.8805, -3.6465, -4.7815, 21.895, -3.6511, -2.2249, 17.4453, -2.947, -4.7453, 21.895, -3.6511, -2.2249, 21.8805, -3.6465, -4.7815, 19.8543, -9.8926, -4.7815, 19.8688, -9.8971, -2.2249, 21.895, -3.6511, -2.2249, 19.8543, -9.8926, -4.7815, 19.8688, -9.8971, -2.2249, 19.8543, -9.8926, -4.7815, 15.8526, -7.8555, -4.7453, 15.8671, -7.86, -2.1887, 19.8688, -9.8971, -2.2249, 15.8526, -7.8555, -4.7453, 22.3955, 3.2936, -2.2252, 22.3991, -3.2719, -2.2252, 17.5159, 2.5886, -2.1887, 22.3991, -3.2719, -2.2252, 17.5186, -2.5723, -2.1887, 17.5159, 2.5886, -2.1887, 22.3955, 3.2936, -2.2252, 17.5159, 2.5886, -2.1887, 17.5014, 2.5886, -4.7453, 22.381, 3.2936, -4.7818, 22.3955, 3.2936, -2.2252, 17.5014, 2.5886, -4.7453, 22.3955, 3.2936, -2.2252, 22.381, 3.2936, -4.7818, 22.3837, -3.2719, -4.7818, 22.3991, -3.2719, -2.2252, 22.3955, 3.2936, -2.2252, 22.3837, -3.2719, -4.7818, 22.3991, -3.2719, -2.2252, 22.3837, -3.2719, -4.7818, 17.5042, -2.5723, -4.7453, 17.5186, -2.5723, -2.1887, 22.3991, -3.2719, -2.2252, 17.5042, -2.5723, -4.7453, -20.5611, -10.1441, -4.7818, -20.5756, -10.1496, -2.2252, -15.8463, -7.8709, -4.7453, -20.5756, -10.1496, -2.2252, -15.8598, -7.8754, -2.1887, -15.8463, -7.8709, -4.7453, -20.5756, -10.1496, -2.2252, -20.5611, -10.1441, -4.7818, -22.5927, -3.9008, -4.7818, -22.6072, -3.9053, -2.2252, -20.5756, -10.1496, -2.2252, -22.5927, -3.9008, -4.7818, -20.5756, -10.1496, -2.2252, -22.6072, -3.9053, -2.2252, -15.8598, -7.8754, -2.1887, -22.6072, -3.9053, -2.2252, -17.4571, -2.9687, -2.1887, -15.8598, -7.8754, -2.1887, -22.6072, -3.9053, -2.2252, -22.5927, -3.9008, -4.7818, -17.4426, -2.9642, -4.7453, -17.4571, -2.9687, -2.1887, -22.6072, -3.9053, -2.2252, -17.4426, -2.9642, -4.7453, -15.6933, 8.2012, -2.1887, -19.5485, 10.1776, -2.3522, -12.6626, 12.3776, -2.1887, -19.5485, 10.1776, -2.3522, -15.7368, 15.4418, -2.3602, -12.6626, 12.3776, -2.1887, -19.5485, 10.1776, -2.3522, -15.6933, 8.2012, -2.1887, -15.6816, 8.1921, -4.7453, -19.5349, 10.2093, -4.7583, -19.5485, 10.1776, -2.3522, -15.6816, 8.1921, -4.7453, -15.7368, 15.4418, -2.3602, -19.5485, 10.1776, -2.3522, -19.5349, 10.2093, -4.7583, -15.7413, 15.4644, -4.7697, -15.7368, 15.4418, -2.3602, -19.5349, 10.2093, -4.7583, -15.7368, 15.4418, -2.3602, -15.7413, 15.4644, -4.7697, -12.65, 12.3694, -4.7453, -12.6626, 12.3776, -2.1887, -15.7368, 15.4418, -2.3602, -12.65, 12.3694, -4.7453, -22.8805, 3.9696, -2.2255, -20.3303, 9.9586, -2.3787, -17.4598, 2.9506, -2.1887, -20.3303, 9.9586, -2.3787, -15.868, 7.8591, -2.1887, -17.4598, 2.9506, -2.1887, -20.3303, 9.9586, -2.3787, -22.8805, 3.9696, -2.2255, -22.4154, 3.8393, -4.7636, -22.8805, 3.9696, -2.2255, -17.4598, 2.9506, -2.1887, -22.4154, 3.8393, -4.7636, -17.4598, 2.9506, -2.1887, -17.4462, 2.9461, -4.7453, -22.4154, 3.8393, -4.7636, -20.4308, 9.9351, -4.6958, -20.3303, 9.9586, -2.3787, -22.4154, 3.8393, -4.7636, -20.3303, 9.9586, -2.3787, -20.4308, 9.9351, -4.6958, -15.8535, 7.8546, -4.7453, -15.868, 7.8591, -2.1887, -20.3303, 9.9586, -2.3787, -15.8535, 7.8546, -4.7453, -21.952, -3.2945, -2.2249, -21.9556, 3.2719, -2.2249, -17.5168, -2.5895, -2.1887, -21.9556, 3.2719, -2.2249, -17.5195, 2.5714, -2.1887, -17.5168, -2.5895, -2.1887, -21.952, -3.2945, -2.2249, -17.5168, -2.5895, -2.1887, -17.5023, -2.5895, -4.7453, -21.9375, -3.2945, -4.7815, -21.952, -3.2945, -2.2249, -17.5023, -2.5895, -4.7453, -21.952, -3.2945, -2.2249, -21.9375, -3.2945, -4.7815, -21.9403, 3.2719, -4.7815, -21.9556, 3.2719, -2.2249, -21.952, -3.2945, -2.2249, -21.9403, 3.2719, -4.7815, -21.9556, 3.2719, -2.2249, -21.9403, 3.2719, -4.7815, -17.5051, 2.5714, -4.7453, -17.5195, 2.5714, -2.1887, -21.9556, 3.2719, -2.2249, -17.5051, 2.5714, -4.7453, -16.5657, -16.1078, -2.2255, -20.4272, -10.7975, -2.2252, -12.65, -12.3911, -2.1887, -20.4272, -10.7975, -2.2252, -15.6852, -8.2175, -2.1887, -12.65, -12.3911, -2.1887, -16.5657, -16.1078, -2.2255, -12.65, -12.3911, -2.1887, -12.6382, -12.3821, -4.7453, -16.554, -16.0988, -4.7818, -16.5657, -16.1078, -2.2255, -12.6382, -12.3821, -4.7453, -16.5657, -16.1078, -2.2255, -16.554, -16.0988, -4.7818, -20.4154, -10.7894, -4.7818, -20.4272, -10.7975, -2.2252, -16.5657, -16.1078, -2.2255, -20.4154, -10.7894, -4.7818, -20.4272, -10.7975, -2.2252, -20.4154, -10.7894, -4.7818, -15.6734, -8.2084, -4.7453, -15.6852, -8.2175, -2.1887, -20.4272, -10.7975, -2.2252, -15.6734, -8.2084, -4.7453, -10.5459, -20.1195, -2.2252, -15.8598, -16.2626, -2.2252, -8.2021, -15.6933, -2.1887, -15.8598, -16.2626, -2.2252, -12.3785, -12.6626, -2.1887, -8.2021, -15.6933, -2.1887, -10.5459, -20.1195, -2.2252, -8.2021, -15.6933, -2.1887, -8.193, -15.6816, -4.7453, -10.5378, -20.1077, -4.7818, -10.5459, -20.1195, -2.2252, -8.193, -15.6816, -4.7453, -10.5459, -20.1195, -2.2252, -10.5378, -20.1077, -4.7818, -15.8517, -16.2508, -4.7818, -15.8598, -16.2626, -2.2252, -10.5459, -20.1195, -2.2252, -15.8517, -16.2508, -4.7818, -15.8598, -16.2626, -2.2252, -15.8517, -16.2508, -4.7818, -12.3703, -12.65, -4.7453, -12.3785, -12.6626, -2.1887, -15.8598, -16.2626, -2.2252, -12.3703, -12.65, -4.7453)
+
+[node name="Level_1_map" type="Node3D"]
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+data_directory = "res://scenes/world/level_1/level_1_data"
+material = SubResource("Terrain3DMaterial_6wot6")
+assets = SubResource("Terrain3DAssets_1rjl6")
+cast_shadows = 0
+top_level = true
+
+[node name="Elarion" parent="." instance=ExtResource("1_ng8pv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26241, -6.94104, 1.14466)
+walk_speed = 5.0
+run_speed = 7.5
+jump_force = 8.0
+double_jump_force = 7.0
+gravity = 20.0
+
+[node name="Altar-sacrifice" type="Node3D" parent="."]
+transform = Transform3D(2.96277, -0.447959, -0.146054, 0.430983, 2.95239, -0.312526, 0.190402, 0.287665, 2.9801, -2.0424, -7.53779, 0.253598)
+
+[node name="Sketchfab_Scene" parent="Altar-sacrifice" instance=ExtResource("38_0vjmo")]
+transform = Transform3D(0.993671, 0.0994359, 0.0522506, -0.0985088, 0.994934, -0.0200344, -0.0539779, 0.0147603, 0.998433, 0.544966, -0.211684, -0.0608114)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Altar-sacrifice/Sketchfab_Scene/Sketchfab_model/e13583780c604fb1b18a2dab02ad7dd5_obj_cleaner_materialmerger_gles/Object_2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Altar-sacrifice/Sketchfab_Scene/Sketchfab_model/e13583780c604fb1b18a2dab02ad7dd5_obj_cleaner_materialmerger_gles/Object_2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_0vjmo")
+
+[editable path="Altar-sacrifice/Sketchfab_Scene"]

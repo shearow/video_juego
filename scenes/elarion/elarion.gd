@@ -34,6 +34,7 @@ var state_machine
 func _ready():
 	anim_tree.active = true
 	state_machine = anim_tree["parameters/playback"]
+	state_machine.travel("idle")
 
 # ------------------------------------
 ## _PHYSICS_PROCESS
@@ -103,6 +104,7 @@ func handle_jump() -> void:
 # ------------------------------------
 
 func update_animation(input_dir: Vector3) -> void:
+	print("Estado actual: ", current_state)
 	var new_state = ""
 	
 	# Comprobar si está muerto?

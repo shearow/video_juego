@@ -3384,7 +3384,7 @@ bones/31/rotation = Quaternion(0.337969, 0.0603651, -0.0439014, 0.938193)
 surface_material_override/0 = SubResource("StandardMaterial3D_671vg")
 
 [node name="Bone-RightHand" type="BoneAttachment3D" parent="Skeleton3D" index="1"]
-transform = Transform3D(0.324735, 0.394979, 0.859383, 0.94346, -0.199223, -0.264941, 0.0665623, 0.896829, -0.437342, -0.001558, 0.00413365, 0.00278415)
+transform = Transform3D(0.324735, 0.394979, 0.859383, 0.94346, -0.199222, -0.264941, 0.0665622, 0.896829, -0.437342, -0.001558, 0.00413365, 0.00278415)
 bone_name = "mixamorig_RightHand"
 bone_idx = 18
 

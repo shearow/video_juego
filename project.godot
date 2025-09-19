@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="3D Fist Game"
+run/main_scene="uid://cgdbnc81l287k"
 config/features=PackedStringArray("4.4", "Forward Plus")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
 
 [input]
 
