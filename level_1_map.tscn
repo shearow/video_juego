@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://cqnve5gycbq0y"]
+[gd_scene load_steps=68 format=3 uid="uid://cqnve5gycbq0y"]
 
 [ext_resource type="Texture2D" uid="uid://xigmtx7qdqv1" path="res://assets/textures/terrain_textures/ground-085-albedo.dds" id="1_6wot6"]
 [ext_resource type="PackedScene" uid="uid://cdbpb7e6s6ybc" path="res://scenes/elarion/elarion.tscn" id="1_ng8pv"]
@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://b1b47xy1ma61o" path="res://assets/textures/terrain_textures/tiles-084-albedo.dds" id="35_b8nby"]
 [ext_resource type="Texture2D" uid="uid://wpx3f7b7kdkm" path="res://assets/textures/terrain_textures/tiles-084-normal.dds" id="36_tin0y"]
 [ext_resource type="PackedScene" uid="uid://cgdbnc81l287k" path="res://assets/models/objects/altar-secrifice/stone_array.glb" id="38_0vjmo"]
+[ext_resource type="PackedScene" uid="uid://bb2lp50sjndus" path="res://scenes/world/Environment.tscn" id="39_ngenx"]
 
 [sub_resource type="Gradient" id="Gradient_y2hs8"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -825,24 +826,29 @@ material = SubResource("Terrain3DMaterial_6wot6")
 assets = SubResource("Terrain3DAssets_1rjl6")
 cast_shadows = 0
 top_level = true
+metadata/_edit_lock_ = true
 
 [node name="Elarion" parent="." instance=ExtResource("1_ng8pv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26241, -6.94104, 1.14466)
-walk_speed = 5.0
-run_speed = 7.5
-jump_force = 8.0
-double_jump_force = 7.0
-gravity = 20.0
 
-[node name="Altar-sacrifice" type="Node3D" parent="."]
+[node name="Objects" type="Node" parent="."]
+
+[node name="Altar-sacrifice" type="Node3D" parent="Objects"]
 transform = Transform3D(2.96277, -0.447959, -0.146054, 0.430983, 2.95239, -0.312526, 0.190402, 0.287665, 2.9801, -2.0424, -7.53779, 0.253598)
 
-[node name="Sketchfab_Scene" parent="Altar-sacrifice" instance=ExtResource("38_0vjmo")]
+[node name="Sketchfab_Scene" parent="Objects/Altar-sacrifice" instance=ExtResource("38_0vjmo")]
 transform = Transform3D(0.993671, 0.0994359, 0.0522506, -0.0985088, 0.994934, -0.0200344, -0.0539779, 0.0147603, 0.998433, 0.544966, -0.211684, -0.0608114)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Altar-sacrifice/Sketchfab_Scene/Sketchfab_model/e13583780c604fb1b18a2dab02ad7dd5_obj_cleaner_materialmerger_gles/Object_2" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Objects/Altar-sacrifice/Sketchfab_Scene/Sketchfab_model/e13583780c604fb1b18a2dab02ad7dd5_obj_cleaner_materialmerger_gles/Object_2" index="0"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Altar-sacrifice/Sketchfab_Scene/Sketchfab_model/e13583780c604fb1b18a2dab02ad7dd5_obj_cleaner_materialmerger_gles/Object_2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Altar-sacrifice/Sketchfab_Scene/Sketchfab_model/e13583780c604fb1b18a2dab02ad7dd5_obj_cleaner_materialmerger_gles/Object_2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0vjmo")
 
-[editable path="Altar-sacrifice/Sketchfab_Scene"]
+[node name="Environment" parent="." instance=ExtResource("39_ngenx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.58274, 1.37274, 7.91459)
+
+[node name="DirectionalLight3D" parent="Environment" index="1"]
+light_color = Color(0.345098, 0.0313726, 0.054902, 1)
+
+[editable path="Objects/Altar-sacrifice/Sketchfab_Scene"]
+[editable path="Environment"]
