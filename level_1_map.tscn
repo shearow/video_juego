@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://cqnve5gycbq0y"]
+[gd_scene load_steps=69 format=3 uid="uid://cqnve5gycbq0y"]
 
 [ext_resource type="Texture2D" uid="uid://xigmtx7qdqv1" path="res://assets/textures/terrain_textures/ground-085-albedo.dds" id="1_6wot6"]
 [ext_resource type="PackedScene" uid="uid://cdbpb7e6s6ybc" path="res://scenes/elarion/elarion.tscn" id="1_ng8pv"]
@@ -39,6 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://wpx3f7b7kdkm" path="res://assets/textures/terrain_textures/tiles-084-normal.dds" id="36_tin0y"]
 [ext_resource type="PackedScene" uid="uid://cgdbnc81l287k" path="res://assets/models/objects/altar-secrifice/stone_array.glb" id="38_0vjmo"]
 [ext_resource type="PackedScene" uid="uid://bb2lp50sjndus" path="res://scenes/world/Environment.tscn" id="39_ngenx"]
+[ext_resource type="PackedScene" uid="uid://ca5h58lnu0tk6" path="res://scenes/enemies/orc_base/orc_base.tscn" id="40_sb7ms"]
 
 [sub_resource type="Gradient" id="Gradient_y2hs8"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -849,6 +850,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.58274, 1.37274, 7.91459)
 
 [node name="DirectionalLight3D" parent="Environment" index="1"]
 light_color = Color(0.345098, 0.0313726, 0.054902, 1)
+
+[node name="Enemies" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.67228, -7.20617, -7.74727)
+
+[node name="Orc_Base_1" parent="Enemies" instance=ExtResource("40_sb7ms")]
+
+[node name="Orc_Base_2" parent="Enemies" instance=ExtResource("40_sb7ms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.10603, -0.432029, 3.86137)
 
 [editable path="Objects/Altar-sacrifice/Sketchfab_Scene"]
 [editable path="Environment"]
