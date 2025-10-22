@@ -11,6 +11,7 @@ extends CharacterBody3D
 @export var max_jumps := 2
 @export var max_health := 100
 @export var max_mana := 100
+@export var damage_attack_1 := 33
 
 # ------------------------------------
 ## INTERNAL VARIABLES
@@ -22,14 +23,11 @@ var current_state := "idle"
 var is_jumping := false
 var is_dead := false
 
-# ⚔️ Ataque
+# Ataque
 var is_attacking := false
-var damage_attack_1 := 33
 var enemies_hit_attack_1 := []
 
-# ------------------------------------
-## NODES
-# ------------------------------------
+# Referencias a nodos
 @onready var anim_tree: AnimationTree = $AnimationTree
 @onready var anim_player: AnimationPlayer = $Elarion_Model/AnimationPlayer
 @onready var camera_ctrl = $Camera_Controller
@@ -47,15 +45,6 @@ func _ready():
 	state_machine.travel("idle")
 	anim_player.animation_finished.connect(_on_animation_finished)
 	update_bars()
-
-# ------------------------------------
-## _PROCESS (TESTEO)
-# ------------------------------------
-func _process(delta):
-	if Input.is_action_just_pressed("ui_accept"):
-		take_damage(10)
-	if Input.is_action_just_pressed("ui_cancel"):
-		heal(10)
 
 # ------------------------------------
 ## _PHYSICS_PROCESS
@@ -81,7 +70,8 @@ func update_bars():
 	health_bar.value = health
 	health_bar.max_value = max_health
 	mana_bar.value = mana
-	mana_bar.max_value = max_mana
+	mana_bar.max_value = max_mana	
+	print("Vida actual de Elarion: %d" % health)
 
 func take_damage(amount: float):
 	if is_dead:
@@ -234,7 +224,9 @@ func update_animation(input_dir: Vector3) -> void:
 		state_machine.travel(new_state)
 		current_state = new_state
 
-
+# ------------------------------------
+## SEÑALES
+# ------------------------------------
 func _on_hitbox_body_entered(body: Node3D) -> void:
 	if body.is_in_group("enemies") and not body in enemies_hit_attack_1:
 		print("Enemigo golpeado por %d " % damage_attack_1)
