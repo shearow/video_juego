@@ -22,6 +22,7 @@ var jump_count := 0
 var current_state := "idle"
 var is_jumping := false
 var is_dead := false
+var is_taking_damage := false
 
 # Ataque
 var is_attacking := false
@@ -73,22 +74,32 @@ func update_bars():
 	mana_bar.max_value = max_mana	
 	print("Vida actual de Elarion: %d" % health)
 
+
 func take_damage(amount: float):
 	if is_dead:
 		return
+	
 	health = clamp(health - amount, 0, max_health)
 	update_bars()
 	
 	if health <= 0:
 		die()
-	else:
-		# Interrumpe ataque si te pegan
-		if is_attacking:
-			is_attacking = false
-			hitbox.monitoring = false
-			anim_player.stop()
-			state_machine.travel("idle")
-			current_state = "idle"
+		return
+	
+	if is_attacking:
+		is_attacking = false
+		hitbox.monitoring = false
+		anim_player.stop()
+		state_machine.travel("idle")
+		current_state = "idle"
+	
+	var damage_anim = "take_damage_2" if amount > 50 else "take_damage_1"
+	
+	if not is_taking_damage:
+		is_taking_damage = true
+		state_machine.travel(damage_anim)
+		anim_player.play(damage_anim)
+
 
 func use_mana(amount: float):
 	if is_dead:
@@ -96,11 +107,13 @@ func use_mana(amount: float):
 	mana = clamp(mana - amount, 0, max_mana)
 	update_bars()
 
+
 func heal(amount: float):
 	if is_dead:
 		return
 	health = clamp(health + amount, 0, max_health)
 	update_bars()
+
 
 func recover_mana(amount: float):
 	if is_dead:
@@ -190,15 +203,6 @@ func start_attack():
 	state_machine.travel("attack_1")
 	anim_player.play("attack_1")
 
-
-func _on_animation_finished(anim_name: String):
-	if anim_name == "attack_1" and is_attacking:
-		is_attacking = false
-		hitbox.monitoring = false
-		enemies_hit_attack_1.clear()
-		state_machine.travel("idle")
-		current_state = "idle"
-
 # ------------------------------------
 ## ANIMACIÓN
 # ------------------------------------
@@ -223,6 +227,20 @@ func update_animation(input_dir: Vector3) -> void:
 	if new_state != current_state and new_state != "":
 		state_machine.travel(new_state)
 		current_state = new_state
+
+
+func _on_animation_finished(anim_name: String):
+	if anim_name == "attack_1" and is_attacking:
+		is_attacking = false
+		hitbox.monitoring = false
+		enemies_hit_attack_1.clear()
+		state_machine.travel("idle")
+		current_state = "idle"
+	
+	if anim_name == "take_damage_1" or anim_name == "take_damage_2":
+		is_taking_damage = false
+		state_machine.travel("idle")
+		current_state = "idle"
 
 # ------------------------------------
 ## SEÑALES
